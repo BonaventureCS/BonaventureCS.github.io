@@ -1,0 +1,136 @@
+/**navbar **/
+.sbu-navbar-homepage {
+  background-color: #5E2F24;
+  margin-bottom: 0px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid transparent;
+  border-color:rgb(255, 199, 38);
+  border-top:rgb(94, 47, 36); 
+
+}
+.sbu-navbar-homepage .navbar-brand {
+  color: #ffffff;
+}
+.sbu-navbar-homepage .nav > li > a {
+  font-size: 15px;
+  font-family: 'Telex', sans-serif;
+  color: #ffffff;
+}
+.sbu-navbar-homepage .nav > li > a:hover,
+.sbu-navbar-homepage .nav > li > a:focus,
+.sbu-navbar-homepage .nav > li.active >a,
+.sbu-navbar-homepage .nav > li.active >a:hover{
+  text-decoration: none;
+  background-color: #FFC726;
+  color: #5E2F24;
+  font-size: 15px;
+  height: 100%;
+}
+.sbu-navbar-homepage .navbar-collapse {
+  background-color: #5E2F24;
+
+}
+
+.navbar-collapse {
+  background-color: #5E2F24;
+}
+
+.navbar-wrapper {
+  margin-top: 0px;
+}
+.navbar-inverse {
+
+  border-color:  rgb(255, 199, 38);
+}
+.navbar > .container .navbar-brand {
+  margin-left: 0px;
+}
+.navbar-wrapper .navbar {
+  border-radius: 0px 0px 16px 16px;
+}
+/** end of navbar **/
+.carousel{
+  margin-top: 0px;
+}
+/** nonHome screen navbar**/
+.sbu-content {
+  padding-top:60px;
+}
+.sbu-center {
+  text-align: center;
+}
+
+.sbu-navbar {
+  background-color: #5E2F24;
+  border-bottom-color: #000;
+  border-bottom-width: 1px;
+  border-bottom-color: #FFC726;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  height: 54px;
+}
+.sbu-navbar .navbar-brand {
+  color: #ffffff;
+}
+.sbu-navbar .nav > li > a {
+  font-size: 15px;
+  font-family: 'Telex', sans-serif;
+  color: #ffffff;
+}
+.sbu-navbar .nav > li > a:hover,
+.sbu-navbar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #FFC726;
+  color: #5E2F24;
+  font-size: 15px;
+  height: 100%;
+}
+.sbu-navbar .navbar-collapse {
+  background-color: #5E2F24;
+}
+
+.navbar-collapse {
+  background-color: #5E2F24;
+}
+
+/**prof styles**/
+
+.sbu-prof-content{
+  padding-top: 80px;
+  background-color: #ffffff;
+}
+.sbu-prof-img{
+  border: 1px solid black;
+  width:90%;
+  height: 100%;
+  margin-top:25px;
+}
+.prof-info{
+  margin-top:25px;
+}
+.course-table{
+  border-bottom: 1px solid black;
+}
+.prof-officeHours{
+
+}
+.prof-contact{
+  margin-right:7%;
+  text-align:left;
+  padding-left:5px !important;
+}
+.prof-tilte{
+  color:#5E2F24;
+  padding-bottom:15px;   
+}
+.prof-cap{
+  text-align:center;
+}
+.sbu-stud-content{
+  padding-top: 80px;
+}
+
+.curr{  
+  margin-right:50px;        
+}
