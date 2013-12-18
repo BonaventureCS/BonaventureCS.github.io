@@ -1,6 +1,15 @@
 body {
   padding-top: 60px;
-  background: #fff;
+  background: #f6f6f6;
+}
+
+.lead {
+  padding-top: 15px;
+  font-size: 16px !important;
+}
+
+.homepage-news {
+  margin-top: -20px;
 }
 
 .sbu-prof-img {
@@ -8,15 +17,14 @@ body {
   margin-top: 25px;
   margin-bottom: -75px;
 }
-.sbu-prof-img img {
-  width: 100%;
-}
+
 .prof-info {
   margin-top: 25px;
 }
 .prof-card .thumbnail {
-  height: 510px;
+  height: auto;
   margin-bottom: 10px;
+  width: 100%;
 }
 .course-table {
   border-bottom: 1px solid black;
@@ -60,9 +68,10 @@ Homepage Image Slider
 }
 .carousel-caption {
   z-index: 10;
+  color: #f0f0f0;
 }
 .carousel .item {
-  height: 500px;
+  height: 450px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -70,5 +79,5 @@ Homepage Image Slider
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 450px;
 }
