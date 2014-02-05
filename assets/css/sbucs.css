@@ -65,6 +65,10 @@ Misc Classes
   padding-bottom: 5px;
 }
 
+.put-me-in-line {
+  display: inline;;
+}
+
 /*
 Homepage Image Slider
 */

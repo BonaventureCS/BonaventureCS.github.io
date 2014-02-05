@@ -1,4 +1,4 @@
-SBUCS-Jekyll
+St. Bonaventure University Computer Science Department Website
 ============
 
-Jekyll Wireframe for SBUCS Website
+This is the repository for the department website. This website is built using Jekyll & Bootstrap.
