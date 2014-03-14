@@ -1,0 +1,385 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CS 131 Lab 4 - Spring 2014</title><style class="style1">
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+p.Question
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	tab-stops:.25in;
+	font-size:11.0pt;
+	font-family:Arial;
+	}
+.style1 {
+	font-family: Verdana;
+}
+.style2 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: small;
+}
+.style3 {
+	text-align: center;
+	font-size: 14.0pt;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style10 {
+	font-size: x-small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style11 {
+	text-align: center;
+	font-size: x-small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style13 {
+	font-size: small;
+	font-family: Verdana;
+	margin-left: .5in;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style14 {
+	margin-bottom: 0;
+}
+.style16 {
+	text-indent: 0in;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style21 {
+	font-size: small;
+	font-style: italic;
+}
+.style23 {
+	font-size: x-small;
+}
+.style24 {
+	text-indent: 0in;
+	font-family: Verdana;
+	font-size: x-small;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style22 {
+	font-size: small;
+	font-weight: bold;
+}
+.style25 {
+	font-family: "Courier New", Courier, monospace;
+	font-size: small;
+}
+.style26 {
+	font-family: "Courier New";
+}
+.style29 {
+	font-family: "Times New Roman";
+}
+.style31 {
+	text-align: center;
+	font-size: small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style32 {
+	font-size: small;
+}
+.style33 {
+	font-family: Verdana;
+	font-size: small;
+}
+.style34 {
+	font-size: small;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style35 {
+	font-size: small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style36 {
+	font-family: "Courier New";
+	font-size: small;
+}
+.style37 {
+	text-indent: 0in;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: small;
+}
+.style38 {
+	margin-bottom: 0;
+	font-family: Verdana;
+	font-size: small;
+}
+.auto-style1 {
+	font-family: "Courier New";
+	font-size: smaller;
+}
+.auto-style2 {
+	font-family: "Courier New", Courier, monospace;
+}
+										 .style39 {
+											 color: #FF0000;
+										 }
+										 .style40 {
+										 	font-family: "Times New Roman";
+										 	color: #FF0000;
+										 }
+-->
+</style>
+</head><body><p class="style3" align="center">Lab 4: Volume and Area Calculations</p>
+<p class="style31" align="center">Steven K. Andrianoff</p>
+<p class="style31" align="center">Robert Harlan</p>
+<p class="style31" align="center">David Levine</p>
+<p class="style31" align="center">Computer Science Department</p>
+<p class="style31" align="center">St. Bonaventure University</p>
+<p class="style31" align="center">Copyright, 2006, 2009, 2013</p>
+<p class="style11" align="center">&nbsp;</p><p class="style11" align="center">&nbsp;</p><p class="MsoNormal">
+<span class="style2">Due: </span>
+<span class="style33">Friday, February 7, 4 p.m.</span></p><p class="style35">&nbsp;</p>
+<p class="style34">Objective:</p><p class="style35">This lab introduces an interactive program for performing calculations. Input from the user is provided by the Scanner class. The program involves the use of numeric <i>variables</i>, <i>arithmetic expressions</i>, and <i>constants</i>. 
+It will also allow you to contrast the console window and a windowing interface 
+for input and output.</p><p class="style13">&nbsp;</p><p class="style34">Background:</p>
+<p class="style35">For background you will want to review your class notes on 
+variables, arithmetic expressions, and constants. We will obtain input from the 
+user using the Scanner class, introduced in section 2.6 of the Lewis and Loftus 
+text. We will also use the JOptionPane class later in the lab to get input from 
+the user.</p><p class="style13">&nbsp;</p>
+<p class="style34">Instructions:</p>
+<ol>
+	<li>
+	<p class="style14"><span class="style33">Launch the Eclipse development environment. Create a project named 
+	Lab4. 
+	</span><span class="style1"><span class="style32"><br><br>Right click on the 
+	<strong>Lab4</strong> icon in the Package Explorer window. Select <strong>New/Class</strong> to create a new class. Name the class Calculator, and make sure that the
+	<strong>public static void main()</strong> checkbox is checked, since we want a main method in this class.
+	<br><br>When you have done this, click the <strong>Finish</strong> button, which will create a file named Calculator.java in the Default package folder of the Lab4 project.<br>
+	<br>Open Calculator.java. Note that you have a template for a Java program, including documentation, the main class, and a main method. Create documentation for the file, indicating its name, authorship and purpose (to calculate the area and volume of geometric objects).&nbsp; 
+	Move the opening comments so they appear just before the declaration of the 
+	class.&nbsp; Remove the &quot;TODO&quot; comment from the main - since you will be 
+	doing that very action throughout this lab.<br>&nbsp;</span></span></p>
+	<p class="style24"><span class="style32">We will be using the Scanner class for input. 
+	Add an Import as the very first line in the file: <br><br></span>
+	<span class="style36"><font COLOR="#7f0055">import</font></span><span class="style26"><span class="style32"> java.util.Scanner;</span></span></p>
+	<p class="style24"><br><span class="style32">In the main method declare three 
+	<em>double</em> variables to store the radius, height, and volume of a cylinder. Store the value 3.0 in the radius and 7.0 in the height.&nbsp;Use an assignment statement to calculate the volume according to the formula<br>
+	<br></span></p>
+	<p class="style16"><span class="style32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<span class="style26">volume = 
+	</span><span class="style29">&#960; </span><span class="style26">r</span></span><span class="style26"><sup><span class="style32">2</span></sup><span class="style32"> h</span></span></p>
+	<p class="style16"><br class="style32"><span class="style32">Use the value 3.14159 for <span class="style29">&#960;</span> and use the * for multiplication. 
+	Alas, there is no &quot;squared&quot; operator, so find a work-around. Variable names must be self-describing: do 
+	</span><span class="style22">not</span><span class="style32"> use r for 
+	radius, h for height, etc. Display the values of the radius, the height, and 
+	the volume using a System.out.println(). Be sure to give a complete and 
+	informative sentence as part of your output; simply displaying numbers with 
+	or without cryptic labels is not sufficient.<br><br>Run the program 
+	and <span class="style39">record the results. Are they correct?</span> Note: you must do the calculation by hand and check the value output with what you expected. 
+	<span class="style39">Indicate that you did verify the output.</span></span></p>
+	<p class="style37">&nbsp;</p>
+	</li>
+	<li>
+	
+<p class="style14">
+<span class="style33">Modify the program to calculate the volume for the values:&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</span> 
+<br class="style32">
+<span class="style32">&nbsp;&nbsp;&nbsp; </span> <span class="style25">&nbsp;&nbsp; </span></p>
+	<table style="width: 30%">
+		<tr>
+			<td class="style26" style="width: 50%">radius</td>
+			<td class="style26" style="width: 50%">height</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			11.0 </td>
+			<td class="style26" style="width: 50%">6.5<br>
+			</td>
+		</tr>
+	</table>
+<p class="style24"><br>
+<span class="style32">Make the changes, run the program, and 
+<span class="style39">record your results</span>. <br><br>In your lab write-up, 
+<span class="style39">discuss how much of the program you needed to modify to change these values</span>.&nbsp;&nbsp; <span style="font-family:&quot;Times New Roman&quot;">
+<br><br></span>Run the program with each of the following sets of data and
+<span class="style39"><em>summarize</em> the results in table</span>:<br>
+</span>
+<br>
+</p>
+	<table style="width: 30%">
+		<tr>
+			<td class="style26" style="width: 50%">radius</td>
+			<td class="style26" style="width: 50%">height</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			11.0 </td>
+			<td class="style26" style="width: 50%">6.5<br>
+			</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			0.0</td>
+			<td class="style26" style="width: 50%">3.2</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			1.5</td>
+			<td class="style26" style="width: 50%">0.0</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			-2.0</td>
+			<td class="style26" style="width: 50%">1.0</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			1.0</td>
+			<td class="style26" style="width: 50%">-2.0</td>
+		</tr>
+		<tr>
+			<td class="style26" style="width: 50%">
+			&nbsp;</td>
+			<td class="style26" style="width: 50%">&nbsp;</td>
+		</tr>
+	</table>
+	</li>
+	<li>
+	
+	<p class="style38">
+	As the program is currently written if you want to change the data of the program you must edit the source code and then recompile and run. In the jargon of the trade, the radius and height of the cylinder are 
+	said to be “hard-wired,” i.e., set by the program and not changeable by the user.&nbsp;
+	<br> 
+<br>
+	</p><p class="style35" style="text-indent:0in">We want to modify the program to request and obtain the data from the user when the program executes.&nbsp; We will use the Scanner class to do this. This class’s nextDouble() method returns the next double in the input stream. We can create a Scanner object and use it to get a double from the input stream as follows:</p>
+<p class="style14" style="text-indent:0in"><font class="auto-style2">
+<span class="auto-style1">Scanner console;<br>console = new Scanner(System.in);<br><br>System.out.print(&quot;Enter the radius: &quot;);<br>radius = 
+console.nextDouble();</span></font><font size="2" class="style25"><br>
+</font></p>
+<p class="style35" style="text-indent:0in">Modify the program so that you can enter the data from step 
+2 from the keyboard.&nbsp; Be sure to prompt the user for each value entered.<br>
+<br>Run the program on the set of data given in step 2.&nbsp;
+<span class="style39">How does the output compare for the two different 
+programs?</span></p>
+<p class="style35" style="text-indent:0in">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+	
+	</li>
+	<li class="style33">
+	
+	Run the program again, but this time try using integers instead of doubles.&nbsp; 
+	In other words, include neither a decimal point nor a fractional part with 
+	your numbers.&nbsp; <span class="style39">Does the program work as expected?&nbsp; What values did 
+	you give and what answers did you get?</span><br><br></li>
+	<li class="style33">Run the program yet again, but this time give &quot;1e1&quot; and 
+	&quot;2e2&quot; for the radius and height respectively.&nbsp; (Do not include the 
+	quotes.)&nbsp; <span class="style39">Explain the behavior that you see.</span><br><br></li>
+	<li class="style33">Run the program one more time, but this time give 
+	completely nonsensical numbers.&nbsp; For instance, try using your name for 
+	the radius and height.&nbsp; <span class="style39">Explain the behavior that you see.</span><br><br></li>
+	<li class="style1"><span class="style32">Modify the program to use a </span>
+	<span class="style21">constant</span><span class="style32"> to store the value 
+of <span class="style29">&#960;</span>.&nbsp; The following line of code defines a constant:</span><span class="style23"><br>
+	<br>&nbsp;</span><span class="auto-style1">final double PI = 3.14159;</span><span class="style1"><br>
+	<span class="style23"><br></span><span class="style32">Add this line to the body of the main method (as the first statement).&nbsp; Change the calculation of the volume of the cylinder by replacing 3.14159 with the constant PI. Run the program 
+	and verify that it still runs correctly. 
+	<br></span></span></li>
+	<li>
+	<p class="style38">Further modify the program to calculate and display the surface area of the cylinder in addition to the volume.&nbsp;The formula for the surface area is given by</p>
+	<p class="style16"><br class="style32"><span class="style32">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<span class="style26">area = 2 </span><span class="style29">&#960;</span><span class="style26"> r</span></span><span class="style26"><sup><span class="style32">2</span></sup></span><span class="style32"><span class="style26"> + 2 
+	</span><span class="style29">&#960;</span><span class="style26"> r h</span><br>
+	</span></p>
+	<p class="style35" style="text-indent:0in">Again, do not use ‘a’ for the name of the variable for storing the area: area is much more descriptive! Run the program on each of the sets of data from Step 
+2, again <span class="style39">summarizing your results in the form of a table</span>.<br>
+	<br></p>
+	</li>
+	<li>
+	<p class="style35" style="text-indent:0in">Check to make sure that your 
+	comments accurately describe the behavior of the program.&nbsp; Print the program source code.&nbsp; 
+	<span class="style39">Turn the printout in with your lab</span>.<br>
+	<br></p>
+	<p class="style37"><span class="style39">Write a short answer explaining why it is better to use a constant declaration for the value of 
+	</span> 
+	<span class="style40">&#960;</span><span class="style39"> rather than 3.14159. 
+	</span> 
+<br><br></li>
+	<li class="style33">We will now experiment with a different style of user interface. We will use the JOptionPane class to get a value from the user and to print out the volume 
+	and area.<br><br>Replace the statement importing the Scanner class with one importing the 
+	javax Swing package:<br><br><span class="auto-style1">import javax.swing.*;</span><br>
+	<br>Here is code using the JOptionPane class that promts the user for a radius 
+	and then prints out the radius. The dialog boxes do not have a parent 
+	window, so I have placed a special value null as the parent, which means &quot;no 
+	parent:&quot;<br><br><span class="auto-style1">String str;<br>str = JOptionPane.showInputDialog(null, &quot;What 
+	is the radius?&quot;);<br>double radius;<br>radius = Double.parseDouble(str); // Converts str from String to double<br>
+	<br>JOptionPane.showMessageDialog(null, &quot;The radius is &quot; + radius);</span><br>
+	<br>Do not worry about the String type (actually, you already know what strings 
+	are): just know that the showInputDialog 
+	message box returns a string and the program must convert it in this example 
+	to a double in order to do the calculations. You may reuse the variable str 
+	for any other information you need from the user, e.g., height: just convert 
+	the string using the Double.parseDouble method and then assign 
+	it to a variable.<br><br>Rewrite the input/output (I/O) in your program so that it uses the showInputDialog message 
+	box to obtain input from the user and the showMessageDialog message box to 
+	display the results of your calculations.<br><br>Run the program. 
+	<span class="style39">Write an analysis of the difference between using the 
+	console window (via the Scanner class) to obtain and display data and the JOptionPane message boxes 
+	to do the same. The analysis should constrast the difference from the point 
+	of view of the user of the program and the programmer who wrote it. For 
+	example, which is easier to use? Which is harder to write? Which is more 
+	attractive?</span> Note: there is no &quot;right&quot; answer here - your opinion matters!<br>
+	<br><span class="style39">Add a &quot;snipshot&quot; of the output window</span> to your lab write-up.<br>
+	<br>Print out a copy of your windowing I/O program and <span class="style39">attach it to your 
+	write-up</span>. <br><br></li>
+
+	<li class="style33">
+	Finally, using the JOptionPane version of the program, try the same 
+	variations on input that you used in Steps 4-6.&nbsp; <span class="style39">
+	Summarize what happens 
+	in each case with this version of the program; contrast this with what 
+	happened in the previous (Scanner-based) version.</span> <br></li>
+</ol>
+<p class="style38">&nbsp;</p>
+<p class="style38"><strong>Hand in:</strong></p>
+<p class="style35" style="text-indent:0in;page-break-after:avoid">The write-up you hand in for this lab should include:</p>
+<ul>
+	<li>
+	<p class="style10" style="text-indent:0in;page-break-after:avoid">
+	<span class="style32">The</span><span class="style33"> results and/or 
+	analyses requested in 
+	steps 1, 2, 3, 4, 5, 6, 8, 9, 10, and 11;</span></p>
+	</li>
+	<li>
+	<p class="style37" style="page-break-after:avoid">
+	The program listing requested in steps 9 and 10</p>
+	</li>
+	<li>
+	<p class="style37" style="page-break-after:avoid">
+	A cover page</p>
+	</li>
+</ul>
+<p class="style34">&nbsp;</p>
+<p class="style34">Help Policy:</p><p class="style35">&nbsp;</p>
+<p class="style35">Help Policy in Effect for This Assignment:&nbsp; <u>Individual Project with Limited Collaboration</u></p>
+<p class="style35">&nbsp;</p><p class="style35">In particular, you may discuss the assignment and concepts related to the assignment with the following persons, in addition to an instructor in this course: <u>any St. Bonaventure Computer Science instructor; any student enrolled in CS 131</u>. You may use the following materials produced by other students:&nbsp; <u>NONE</u>.</p></body></html>

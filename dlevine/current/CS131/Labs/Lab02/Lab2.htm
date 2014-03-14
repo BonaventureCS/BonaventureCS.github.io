@@ -1,0 +1,265 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>CS 131 Lab 2: Rolling the Dice</title><style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+p.Question
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-indent:-.25in;
+	tab-stops:.25in;
+	font-size:11.0pt;
+	font-family:Arial;
+	}
+p.MsoEndnoteText
+	{margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Courier New";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+.style1 {
+	text-align: left;
+}
+.style2 {
+	font-family: Calibri;
+	font-weight: bold;
+}
+.style3 {
+	font-family: Calibri;
+}
+.style8 {
+	font-family: Calibri;
+	text-align: center;
+	font-size: small;
+}
+.style11 {
+	font-family: "Courier New";
+}
+.style13 {
+	text-indent: 0in;
+	font-family: Calibri;
+	margin-left: 0in;
+}
+.style14 {
+	color: #FF0000;
+}
+.style15 {
+	font-family: "Courier New", Courier, monospace;
+}
+-->
+</style>
+</head><body><p class="style2" align="center" style="text-align:center"><span style="font-size: 14.0pt">Lab 2: Rolling the Dice</span></p>
+<p class="style8" align="center">Steven K. Andrianoff<br>
+Robert Harlan<br>
+David Levine<br>
+Computer Science Department<br>
+St. Bonaventure University<br>
+Copyright, 2005, 2009</p>
+<p><span ><span class="style3"><strong>Due:</strong>&nbsp;&nbsp;</span></span><span class="style3">Friday, 
+January 24, at 4 p.m.</span></p><p class="style2">Objective:</p>
+<p class="style3">In this lab you will be a client of a <strong>class</strong>. You will declare, create, and test Dice 
+<strong>objects</strong>, which are instances of the Dice class. You will experiment with the objects by printing out the values rolled. The lab also introduces 
+<strong>integer variables</strong>, <strong>simple arithmetic operations</strong>, and 
+<strong>assignment statements</strong>.&nbsp; </p>
+<p class="style2">Background:</p><p class="style3">In this lab we use a programmer defined class, the Dice class. Unlike the JFrame class we used in 
+Lab 1, which is part of the Java Swing Package, the Dice class is one your 
+instructors created for your use. We will use it throughout the semester whenever we need a randomly generated integer.</p>
+<p class="style3">The Dice class has two <strong>constructors</strong>, methods invoked when Dice objects are 
+<strong>created</strong>. One takes no arguments and sets the number of sides to a fixed number (you will attempt to determine this number in the lab). The other takes one integer argument and sets the sides to that number. </p>
+<p class="style3">The Dice class also has a roll method that returns a randomly generated integer between 1 and the number of sides. </p>
+<p class="style3">To use a Dice object we must declare an object of type Dice, create the object, 
+and then use the object by sending it messages. In this case we will send the object roll messages so that it returns a randomly generated integer.</p>
+<p class="style3">Programming languages such as Java distinguish between two types of numbers: integers and reals. In this lab we will be using integers, the positive and negative whole numbers and zero (actually, we will only use positive integers, 
+although integers include the negative whole numbers and zero).</p>
+<p class="style3">We will see that it is possible to assign an integer value to a variable using 
+an assignment statement. This will enable us to test the Dice class and even to add the results 
+of two rolled dice.</p>
+<p class="style2">Instructions:</p>
+<ol>
+	<li>
+	<p class="style1"><span class="style3">Launch the Eclipse development 
+	environment. Verify that you are in the correct workspace (Z:\CS131) - you should see 
+	your work from last week. If not, let me know!<br>
+	<br>
+	Create a new project by selecting </span><span class="style2">
+	File / New / Java Project</span><span class="style3">. Name the project </span><span class="style2">Lab2</span><span class="style3">. 
+	Select </span><span class="style2">Finish</span><span class="style3">. 
+	You should see Lab2 listed as a project in the Package Explorer window.</span></p>
+	</li>
+	<li>
+	<p><span class="style3">You will now add two java source files, Dice.java and DiceRoller.java, 
+	to the Lab2 project. Use <strong>Windows Explorer</strong> to move to the <b>Lab 2 </b>folder 
+	in the course folder <strong>cscourses\CS131</strong> (identified as the
+	<strong>k:</strong> drive). Select and copy the files you wish to 
+	add, <b>Dice.java </b>and<b> DiceRoller.java</b>. 
+	Return to Eclipse and paste the files in the <strong>src</strong> subfolder 
+	in the Lab2 project folder. Verify that the files were added to the Lab2 project in 
+	the <b>Default Package.</b><br><br>
+	Alternatively (useful mostly if you are reading this web page from somewhere 
+	that is not connected to the department's network), you may download
+	<a href="Dice.java">Dice.java</a> and <a href="DiceRoller.java">
+	DiceRoller.java</a> directly and copy them to the folder as described above.
+	&nbsp;</span></p>
+	</li>
+	<li>
+	<p><span class="style3">Open DiceRoller.java in the editor window. Look at the source code. Does it look familiar? 
+Predict what the program will output and where it will be displayed. 
+	<span class="style14">Record your 
+prediction.</span> Run the program by selecting <b>Run / Run As Java Application 
+	</b><span class="style14">Record what happens. 
+Was your prediction correct?</span><br><br><b>Hint</b>: It is a good idea of have MS Word running so that you can work 
+	on your lab write-up as you go.</span></p>
+	</li>
+	<li>
+	<p><span class="style3">Open the Dice.java source file. This file contains the definition of the class Dice. Compare DiceRoller.java and Dice.java. Note that both are classes. However, note that only the DiceRoller class has a method called 
+	<strong>main</strong>. main is the “entry point” for the executable program created for the project. The CPU executes the program associated with the main method.</span></p>
+	</li>
+	<li>
+	<p><span class="style3">We will now test the Dice class. Open DiceRoller.java 
+	in the edit window. We will first declare a Dice object, then create it, and then use it by sending it a roll message.<br>
+	<br>
+	Delete the
+	</span><span class="style15">System.out.println</span><span class="style3"> 
+	statement and add the following lines of code to the main method of the 
+	DiceRoller class:<br>
+	<br>
+	</span><span class="style11">Dice die1;<br>
+	die1 = new Dice();</span><span class="style3"><br>
+	<br>
+	The first line <strong>declares</strong> a Dice object named <em>die1</em>. The second line 
+	<strong>creates</strong> the object using the new operator.<br>
+	<br>
+	Run the program and <span class="style14">record the results. 
+Why did you get the output you did?</span></span></p>
+	</li>
+	<li>
+	<p><span class="style3">To test the class we must send the Dice object a roll message. However, roll returns an integer and we need a place to store the integer that the message returns. To that end we will declare a 
+	<b>variable</b>, <em>result1</em>, which we can use to store values during the run of the program. Once we have stored it, we can use the System.out.println statement to display the integer rolled.<br>
+	<br>
+	Add the following lines to the program below your creation of the Dice object:<br>
+	<br>
+	</span><span class="style11">int result1;<br>
+	result1 = die1.roll();<br>
+System.out.println(&quot;Number rolled is &quot; + result1);</span><span class="style3"><br>
+	<br>
+	The first line declares <em>result1</em> to be a variable that stores integers. The second line is more complex. To the right of the assignment operator = is a message we have sent to the 
+	<em>die1</em> object. Recall (from the information in the Background 
+	section) that this generates an integer between 1 and the number of sides the object has. The assignment operator = assigns this integer to the variable 
+	<em>result1</em>.<br>
+	<br>
+At this point a lot happened but we can’t see it! The last line lets us see the 
+integer assigned to the variable <em>result1</em>.<br>
+	<br>
+	<em>Number rolled is 3</em><br>
+	<br>
+	(that was the number I got!). Run your program and make sure it works.<br>
+	<br>
+	Run the program 10 times and <span class="style14">record the results. What is your guess as to the default number of sides a Dice object has?
+	</span> 
+	</span></p>
+	</li>
+	<li>
+	<p class="style3">Let’s see how well you understood the last two steps. It is common in many games to have two dice objects and to roll both to determine the value rolled. Declare and create a second Dice object, 
+	<em>die2</em>, and a second integer variable in which to store its rolls.<br>
+	<br>
+	Have the program “roll” each of the die and report the value rolled for each die.&nbsp; 
+	Be sure to label the two messages in (slightly) different ways.<br>
+	<br>
+	Run the program three times and <span class="style14">record the results rolled.</span></p>
+	</li>
+	<li>
+	<p><span class="style3">At present we are storing the value of each roll in a separate variable. However, 
+	we really want the sum of the two, and computers are very good at adding. 
+	<br>
+	<br>
+	Below the reports of the two values rolled by the dice add the following statements:<br>
+	<br>
+	</span><span class="style11">int sum;<br>
+	sum = result1 + result2;</span><span class="style3"><br>
+	<br>
+	The first line declares a new integer variable <em>sum</em>. The second adds the values in 
+	<em>result1</em> and <em>result2</em> and places the integer in <em>sum</em>.<br>
+	<br>
+	Add a statement to display the result of adding the two roll results. Run the program three times and record the results. 
+	<span class="style14">Do the tests show that the program runs correctly? Why or why not?</span><br>
+	<br>
+	Update the program documentation to indicate the author(s) of the 
+	modifications to the original program and what the program now does.
+	<span class="style14">Print out a copy of the source code of your program at this point</span> and attach 
+	it to your lab write-up. </span></p>
+	</li>
+	<li>
+	<p class="style3">To this point we have used the default number of sides to determine the range of integers “rolled” by a Dice object. However, the Dice class has a second constructor that permits the programmer to specify the number of sides. 
+	<strong>Delete all of your statements</strong> creating, rolling and printing out the integers rolled by Dice objects.&nbsp; Add the following statements to create a Dice object with 10 sides:<br>
+	<br>
+	<span class="style11">Dice die3;<br>
+	die3 = new Dice(10);</span><br>
+	<br>
+	Add a variable and appropriate 
+statements to roll the die and show the value rolled. Run the program ten times and 
+	<span class="style14">record the results. </span>Examine the numbers printed out. 
+	<span class="style14">Do they indicate that the highest number that can be rolled is ten? 
+Do they indicate that the highest number generated is greater than the largest integer 
+in the Dice objects used in previous steps? Explain your conclusions.</span><br>
+	&nbsp;</p>
+	</li>
+	<li>
+	<p class="style3">Add a second die. 
+Leave its number of sides at the default value (i.e., declare it and create it as you did in 
+step 6). Have the program roll each of the dice and print out the values rolled. 
+	Run the program 10 times and record the value rolled by each die 
+each time. Examine the results. <span class="style14">What evidence from the values rolled is there to 
+support the claim that there are two different Dice objects stored in memory 
+during the run of the program?&nbsp; </span> <br>
+	<br>
+	Update the program documentation.
+	<span class="style14">Print a copy of your source code</span> and attach it to your lab write-up. </p>
+	</li>
+	<li>
+	<p class="style3">Now add the program source code in the class folder for
+	<a href="DiceGUISimple.java">DiceGUISimple.java</a>,
+	<a href="DicePanel.java">DicePanel.java</a>, and
+	<a href="DicePanelObserver.java">DicePanelObserver.java</a>&nbsp;to 
+	the src folder of your project.&nbsp; (The links in the previous sentence 
+	are once again for those without direct access to the department's network.)<br>
+	<br>
+	Return to the course folder (courses\CS131) and copy the 
+	<a href="images.zip">images</a> folder to your Lab2 folder. 
+	Note: this must be in the top level of the Lab2 folder, not&nbsp;in the src 
+	folder.&nbsp; (If you download the link in the previous statement, you will 
+	get a .zip file which you must uncompress before copying it to the Lab2 
+	folder.)<br>
+	<br>
+	Run the main method from DiceGUISimple.java.&nbsp; 
+<span class="style14">What do you see?&nbsp; Does there appear to be any difference in the way the 
+Dice behaves?&nbsp; Record your answers in your lab write-up.</span></p>
+	</li>
+	<li>
+	<p class="style3">EXTRA CREDIT (3 pts): Modify the About box and the opening comment 
+	in DiceGUISimple.java so that it gives proper credit to both 
+you and to Brad and includes your picture as well. Remember that your picture 
+	must go in the Lab2 folder, not the src folder.&nbsp; <br><br>
+	<span style="letter-spacing: -.1pt">If you do this extra 
+	credit step, print a copy of the source code file DiceGUISimple.java </span>and turn it in with your lab write-up.
+
+	In addition, send an
+	<a href="mailto:dlevine@sbu.edu?subject=CS 131 - Lab 2 Extra Credit">email</a> to your instructor 
+	with a copy of the source code (DiceGUISimple.java) and your image file as attachments.</p>
+	</li>
+</ol>
+<p class="MsoEndnoteText" style="margin-left: .25in"><span style="font-size:11.0pt;font-family:Arial;letter-spacing:-.1pt">&nbsp;</span></p>
+<p class="style3" style="text-indent: 0in; page-break-after: avoid; margin-left: 0in">
+<strong>Hand in</strong>:</p>
+<p class="style13" style="page-break-after: avoid; ">The write-up for this lab is more complex than the one for the first 
+lab. Be verbose: make sure that when you record results, you indicate what they are the results of. Make sure that you indicate what you are explaining when you offer an explanation. Your 
+complete lab write-up should include the results 
+and explanations you recorded in steps 
+3, 5 - 9. Staple the results, the discussions, and two (or three if doing the bonus in 
+step 12) source code listings to a cover page and turn this in as your lab write-up.</p><b>
+<p class="style2">Help Policy:</p></b><p class="style3">Help Policy in Effect for This Assignment:&nbsp; <u>Group Project with Limited Collaboration</u></p>
+<p class="style3">In particular, you may discuss the assignment and concepts related to the assignment with the following persons, in addition to an instructor in this course: <u>any member of your group; any St. Bonaventure Computer Science instructor; and any student enrolled in CS 131</u>.&nbsp; </p>
+<p class="style3">You may use the following materials produced by other students:&nbsp; <u>materials produced by members of your group</u>.</p></body></html>

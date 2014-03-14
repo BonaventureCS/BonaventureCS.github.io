@@ -1,0 +1,310 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CS 131 Lab 3 Spring 2014</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+.style1 {
+	margin-left: 40px;
+	font-size: small;
+	font-family: Verdana;
+}
+.style2 {
+	font-family: Verdana;
+}
+.style3 {
+	font-family: Verdana;
+	font-weight: bold;
+}
+.style4 {
+	font-family: Verdana;
+	font-style: italic;
+	font-size: small;
+}
+.style5 {
+	text-indent: 0in;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: small;
+	margin-left: 0in;
+}
+.style6 {
+	text-indent: 0in;
+	font-family: Verdana;
+	font-size: small;
+	margin-left: 0in;
+}
+.style7 {
+	font-size: small;
+}
+.style8 {
+	font-family: Verdana;
+	font-size: small;
+}
+.style9 {
+	font-size: small;
+	font-style: italic;
+}
+.style10 {
+	font-size: small;
+	font-weight: bold;
+}
+.style11 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: small;
+}
+.style12 {
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	font-size: large;
+}
+.style13 {
+	font-family: Verdana;
+	text-align: center;
+	font-size: small;
+}
+.style14 {
+	font-family: Verdana;
+	font-size: small;
+	margin-left: .5in;
+}
+.style15 {
+	font-family: "Courier New";
+}
+.auto-style1 {
+	text-decoration: underline;
+}
+.auto-style2 {
+	font-weight: normal;
+}
+.auto-style3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.auto-style4 {
+	font-family: "Courier New", Courier, monospace;
+}
+.style16 {
+	color: #FF0000;
+}
+.style17 {
+	font-size: small;
+	color: #FF0000;
+}
+.style18 {
+	font-family: Verdana;
+	font-size: small;
+	color: #FF0000;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="style12" align="center">Lab 3: Credit Cards</p>
+<p class="style13" align="center">
+Steven K. Andrianoff<br>
+Robert Harlan<br>
+David Levine<br>
+Computer Science Department<br>
+St. Bonaventure University<br>
+Copyright,&nbsp; 2006, 2009</p>
+<p class="style7"><span class="style3">Due:&nbsp;&nbsp;&nbsp; </span>
+<span class="style2">Friday, January 31, at 4 p.m.</span></p>
+<p class="style11">Objective:</p>
+<p class="style14">This lab provides a CreditCard class and requires students to 
+create CreditCard objects and exercise the CreditCard methods.&nbsp; Students 
+will test the behavior of the CreditCard methods without having access to the 
+source code for the CreditCard class. Similarly to last week, you will create a 
+&quot;main&quot; class that makes use of another class; this main class will &quot;exercise&quot; 
+the methods of another class.</p>
+<p class="style11">Background:</p>
+<p class="style14">For this lab you will be provided with a CreditCard class.&nbsp; You will not have 
+access to the source code (Java code) for the class. However the class has the 
+following methods:</p>
+<ul>
+	<li><span class="style8">A </span><span class="style4">constructor</span><span class="style8"> that takes no arguments</span></li>
+	<li><span class="style8">A second </span><span class="style4">constructor</span><span class="style8"> that takes a single integer (numeric) argument</span></li>
+	<li><span class="style8">A </span><span class="style4">pay</span><span class="style2"><span class="style7"> method with the signature:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+	<span class="style8">public void pay(int amount)</span></li>
+	<li><span class="style8">A </span><span class="style4">charge</span><span class="style2"><span class="style7"> method with the signature:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+	<span class="style8">public void charge(int amount)</span></li>
+	<li><span class="style8">A </span><span class="style4">limit</span><span class="style2"><span class="style7"> method with the signature<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+	<span class="style8">public int limit()</span></li>
+	<li><span class="style8">A </span><span class="style4">totalDue</span><span class="style2"><span class="style7"> method with the signature<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+	<span class="style8">public int totalDue()</span></li>
+	<li><span class="style8">A </span><span class="style4">minimumDue</span><span class="style2"><span class="style7"> method with the signature<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span>
+	<span class="style8">public int minimumDue()</li></span>
+	<span class="style8"><br>
+	</span></li>
+</ul>
+<p class="style1" >You can probably infer the behavior of the methods from their names.&nbsp; Your task 
+in the lab is to exercise the methods to precisely determine their behavior.</p>
+
+<ol>
+	<li><span class="style8">Launch the Eclipse development environment. Create a new project named&nbsp;</span><span class="style11">Lab3</span><span class="style2"><span class="style7">.&nbsp; 
+	<br><br>Copy the jar file <a href="Lab3.jar">Lab3.jar</a> 
+to your project from the class folder and place it in the top level of the Lab3 
+	project folder.</span></span><span class="style8"> (Alternatively, you may 
+	download it from the link and then copy it into Eclipse.)&nbsp; You must now tell Eclipse to include 
+this file when it builds your program. To do so, right click on the file Lab3.jar and select
+	<strong>Build Path</strong>, then select <strong>Add to Build Path</strong>. 
+	This will add Lab3.jar to the build path. Note: Ask the lab assistant or instructor for help if you 
+get stuck. <br></span><span class="style2"><span class="style7"><br>You now need to create a program to use (be a client of) the CreditCard class.
+Create a class named CardTester by going to the <strong>src</strong> folder of the Lab3 project 
+folder and selecting&nbsp; </span><span class="style10">File/New/Class</span><span class="style7">. 
+Name the class </span><span class="style10">CardTester</span><span class="style7">. Make 
+sure the Modifier </span><span class="style10">public</span><span class="style7"> is selected and the 
+	</span><span class="style10">public static void 
+main(String[] args)</span><span class="style7"> checkbox </span>
+	<span class="style10">is</span><span class="style7"> checked. Click </span>
+	<span class="style10">Finish</span><span class="style7">. The 
+editor window should open a file named CardTester.java 
+with a skeleton of the CardTester class with an empty </span>
+	<span class="style9">main</span><span class="style7"> method in it. 
+<br><br>All the coding in the succeeding steps involve writing statements in the 
+	main method of the CardTester class.&nbsp; This is very similar to last week; 
+	then, you kept modifying the DiceRoller class, while making use of the Dice class 
+	which you never changed.&nbsp; Thus, this week you must declare and create a CreditCard object, 
+then use the methods in the class to exercise the object. <br><br>Begin by 
+	inserting comments at the beginning of the class that include your 
+names, the date, and a brief description of the program.&nbsp; For a description just say that this is a program to test 
+the CreditCard class.</li>&nbsp; (Also, as you code, remove the Eclipse-supplied 
+	&quot;TODO&quot; comment from the main.)<br></span></span>
+	<li><span class="style2"><span class="style7">Add statements to the main method to declare then create a CreditCard object.&nbsp;
+	<br><br><span class="style16">What is the initial limit of the card?</span>&nbsp; Write statements to determine the limit 
+and display it.&nbsp; </span></span>
+	<p class="style2"><span class="style7">Use System.out.println() for 
+displaying information in the console window.&nbsp; Also, label any displayed 
+information, for example,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<span class="style15">System.out.println(“The initial limit is “ 
++ amt);</span><br><br><span class="style16">How much is owed initially?&nbsp; What is the minimum payment initially?&nbsp;</span>
+	<span class="style16">Record 
+your results</span> and <span class="style16">provide a copy of the statements you used to find and 
+display this information</span></span>.<span class="style7"></li></span><li class="style8">
+	There is a second constructor for the CreditCard class that takes a single integer argument.&nbsp; 
+Create a card using this constructor and determine the initial limit, amount 
+owed, and minimum payment.&nbsp; Describe how this constructor is different from the 
+constructor that takes no arguments.&nbsp; <span class="style16">Record your results and 
+	provide a copy of the statements you used to find and display this information</span>. <br>
+	<br>
+	<li class="style2"><span class="style7"><span class="style2">Modify the program from Step 3 by adding statements to make a charge on the card after it is created.&nbsp;<span class="style16">After 
+	the charge is made what is the limit?&nbsp; After the charge is made how 
+	much is owed?&nbsp; After the charge is made what is the minimum payment?</span>&nbsp; Add statements to 
+	find this information.&nbsp; <span class="style16">Record your results and 
+	provide a copy of the statements you used to find and display this information</span></span>.<span class="style2"><span class="style16"></li></span><br>
+	</span></span>
+	<li class="style2"><span class="style2"><span class="style7">Further modify the program 
+from Step 4 to make a payment on the card after the charge.&nbsp; 
+	<span class="style16">After the 
+	charge and the payment what is the limit?&nbsp; After the charge and the 
+	payment how much is owed?&nbsp; After the charge and the payment what is the 
+	minimum payment?</span>&nbsp; Add 
+statements to perform find this information.&nbsp; <span class="style16">Record your results and 
+provide a copy of the statements you used to find and display this information.</li></span><br>
+	</span></span>
+	<li class="style2"><span class="style7">Run some experiments to determine how the 
+minimum payment is calculated.&nbsp; Be careful, there may be special cases.&nbsp;
+	<span class="style16">Describe how the minimum payment is determined.&nbsp;
+	Provide a copy of the statements you used to determine how the minimum 
+payment is calculated.&nbsp; 
+	Describe the results of your tests.</span><u><br>
+	</u>
+	</span>
+	<li class="style2"><span class="style7"><span class="style2">Can you find charges that 
+cause errors to be displayed?&nbsp; (Hint: there are two types of charges that will 
+result in error messages, and neither one involves charging a decimal 
+amount - the class only works with integers)&nbsp; <span class="style16">Provide a copy of the statements that resulted in errors and 
+	record the error messages</span></span>.<br></span>
+	<li class="style2"><span class="style7"><span class="style2">Comment out all the 
+statements except the statements to create the card and statements to make a 
+single charge.&nbsp; Display the current limit, amount owed, and minimum payment 
+after this charge.&nbsp; Now experiment with various payments.&nbsp; 
+	<span class="style16">What happens to the 
+limit, the amount owed, and the minimum payment when a full payment is made?&nbsp; 
+What happens to these when a partial payment is made?&nbsp; Provide a copy of the statements 
+you used to answer these questions and the 
+results you obtained</span></span>.<br class="style16"></span>&nbsp;<span class="style2"><span class="style17"></li></span></span><li class="style8">
+	<span class="style16">Can you find payments that cause errors to be displayed?</span>&nbsp; (Hint: there 
+	are three types of 
+payments that will result in error messages and again none of these involves 
+paying a decimal amount)&nbsp; <span class="style16">Provide a copy of the statements that resulted in errors and 
+	record the error messages. <br>
+	</span>
+	<br>
+	<li class="style2"><span class="style8">Make sure all of your tests are still in the main method even though most of them may be 
+commented out.&nbsp; </span><span class="style18">Print a copy of the file CardTester.java</span><span class="style2"><span class="style7"> and hand it in with your lab 
+write-up.<br></span></span>
+</ol>
+
+
+<p class="style5" style="page-break-after: avoid; ">
+<u>Extra Credit</u>:
+<span class="auto-style2">
+<span class="auto-style3">&nbsp;Bring the file <a href="Lab3Improved.jar">
+Lab3Improved.jar</a> into the project as you did earlier.&nbsp; (Again, either 
+copy from the CSCourses folder or download the link.)&nbsp; This file defines a 
+different (perhaps more realistic) class named ImprovedCreditCard.&nbsp; You 
+will need to perform similar tests on this class.&nbsp; Create a new class called ImprovedCardTester with a main 
+method in it.&nbsp; <br>
+<br>
+The ImprovedCreditCard class has the same set of methods as the CreditCard class 
+however one or more of the methods behave differently.&nbsp; Write statements to test 
+this new class.&nbsp; <span class="style16">What methods behave differently?&nbsp; Carefully describe the 
+different behavior based on tests you write.&nbsp; Provide a copy of the statements you used 
+to investigate the different behavior and how the behavior is different.</span><br>
+<br>
+Make sure the comments in the file </span>
+<span class="auto-style4">ImprovedCardTester.java</span><span class="auto-style3"> 
+are appropriate then <span class="style16">print a copy of the file </span>
+</span>
+<span class="auto-style4"><span class="style16">ImprovedCardTester.java</span></span><span class="auto-style3"> and hand it in with your lab 
+write-up.</span></span></p>
+<p class="style5" style="page-break-after: avoid; ">
+Hand in:</p>
+<blockquote>
+  <p class="style6" style="page-break-after: avoid; ">
+  The write-up you hand in for this 
+  lab should include:<br>
+  -&nbsp;&nbsp;&nbsp; answers to questions in Steps 2-9 <br>
+  -&nbsp;&nbsp;&nbsp; the record of results and a copy of statements used as 
+  requested in Steps 2-9 <br>
+  -&nbsp;&nbsp;&nbsp; a printout of the program (source code) requested in Steps 10 
+  <br>-&nbsp;&nbsp;&nbsp; <span class="auto-style3">if you completed the Extra Credit, answer the 
+  specified questions, record 
+	the results of your tests, include a copy of the statements used, and 
+	provide a printout of the source code</span><br>
+	</p>
+</blockquote>
+<p class="style11">Help Policy:</p>
+<p class="style8">Help Policy in Effect for 
+This Assignment:&nbsp; <u>Group Project with Limited Collaboration</u></p>
+<p class="style8">&nbsp;In particular, you may 
+discuss the assignment and concepts related to the assignment with the following 
+persons, in addition to an instructor in this course: <u>any member of your 
+group; any St. Bonaventure Computer Science instructor; and any student enrolled 
+in CS 131</u>.&nbsp; </p>
+<p class="style8">You may use the following 
+materials produced by other students:&nbsp; <u>materials produced by members of your 
+group</u>.</p>
+
+</body>
+
+</html>

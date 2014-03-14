@@ -1,10 +1,21 @@
 body {
-  padding-top: 60px;
   background: #f6f6f6;
+}
+
+.body-not-homepage {
+  padding-top: 60px;
+}
+
+.body-homepage {
+
 }
 
 a {
   color: #d35400;
+}
+
+.navbar-hp {
+  z-index: 9999;
 }
 
 .lead {
@@ -24,6 +35,12 @@ a {
 
 .prof-info {
   margin-top: 25px;
+}
+
+.homepage-navbar-ext {
+  height: 200px;
+  top: 0;
+  z-index: 9999;
 }
 
 .thumbnail {

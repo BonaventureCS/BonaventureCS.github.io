@@ -1,0 +1,403 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>CS 131 Lab 1</title>
+<style type="text/css">
+.style1 {
+	font-family: "Courier New", Courier, monospace;
+}
+.style2 {
+	color: #FF0000;
+}
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center" style="text-align:center">
+<b style="mso-bidi-font-weight:
+normal">
+<span style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:
+Arial">Lab 1: Introduction to Windows 7<br>
+and </span></b><span style="font-size: 14pt"><b>
+<span style="font-family: Arial">the Eclipse Development Environment</span></b></span><span style="font-size:14.0pt;mso-bidi-font-size:
+10.0pt;font-family:Arial"><o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Steven
+K. Andrianoff<br>
+Robert Harlan<br>
+David Levine<br>
+Computer Science Department<br>
+St. Bonaventure University<br>
+Copyright<o:p> 2009, 2011 <br>
+&nbsp;</o:p></span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt; font-family: Arial">Due:</span></b><span style="font-size: 11.0pt; font-family: Arial">&nbsp; </span>
+Friday, August 30</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Objective:</span></b></p>
+<p class="MsoNormal">This lab introduces Windows 7 and the Eclipse development environment.&nbsp; You will run and 
+modify three Java programs and learn how to print program source code and the 
+output from a program.&nbsp;</p>
+<p class="MsoNormal">Students are encouraged to work in pairs in the lab for this course.&nbsp; However 
+this first week each student is expected to complete the lab on his/her own and 
+turn it in.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial"><br>
+Background:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b>Windows </b> 7 is the operating system for the PC’s 
+that we will use in the Software Development Laboratory (Walsh 101).&nbsp;</p>
+<p class="MsoNormal">You will use the <b>Documents</b> folder within your user 
+folder on the lab machines to store all your work. Your user folder is 
+accessible from any machine in this lab or in the Walsh 103 lab.&nbsp; The 
+organization principle you use to create subdirectories within your Documents 
+folder is a matter of taste. &nbsp;</p>
+<p class="MsoNormal">It is 
+common practice when programming in Java to create a <b>project</b> for each 
+program such as a lab assignment.&nbsp; A project is the collection of files 
+used to build the application program. The development environment Eclipse will 
+create a new folder for each 
+project you create this semester. You will create a project named <b>Lab1</b> 
+for today's lab. </p>
+<p class="MsoNormal">To 
+retrieve a file from a subdirectory, you must know how to navigate the file 
+system (the hierarchy of folders/subdirectories) of the disk.&nbsp; You will learn 
+how to navigate the file system in the lab exercises. &nbsp;</p>
+<p class="MsoNormal">Files 
+are named with two parts.&nbsp; The first part is the name and the second part 
+is called the extension.&nbsp; The two parts are separated by a period.&nbsp; The 
+extension identifies the type of file it is.&nbsp; Usually the extension identifies 
+the application program that uses the file.&nbsp; For example, you will use a file in 
+the exercises of this lab named <font face="monospace">Hello.java</font>.&nbsp; 
+The <font face="monospace">.java</font> 
+extension indicates that it is a file containing a program written in the Java 
+language. Note: if file name extensions are not visible, you can set the view 
+options on Windows Explorer to display them. We illustrate this below.&nbsp;</p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt; font-family: Arial">
+Logging onto a lab computer:</span></b><span style="font-size: 11.0pt; font-family: Arial">&nbsp;</span></p>
+<p class="MsoNormal">You 
+should already have a valid <b>user name</b> for the Computer Science’s domain, 
+COMPSCI, on the university’s network.&nbsp; (Note that we set up 
+the user names based upon the rosters that are at least a week old; if you added 
+the course after that time, you may not yet have a user name.)&nbsp; Your <b>user name</b> 
+consists of your first initial preceded by the domain name.&nbsp; 
+For example:
+COMPSCI\jdoe Your initial <b>password</b> is your student id number 
+(6 digits without the leading 0).&nbsp; After you log in the first time, you will be asked to 
+change your password.&nbsp; Please choose a non-obvious password for your use.&nbsp; &nbsp;</p>
+<p class="MsoNormal">NOTE: 
+The <b>user name</b> and <b>password</b> for the Computer Science domain is 
+independent of the <b>user name</b> and <b>password</b> you were assigned by 
+Technology Services for use on the campus network.&nbsp;&nbsp; You may choose to use the 
+same password or you may choose to use different passwords on these different 
+domains.&nbsp;</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Instructions:</span></b><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial"><o:p>
+</o:p>
+</span></p>
+<ol>
+<li>When you sit 
+down at a machine in the lab you will need to press the <b>Ctrl-Alt-Delete</b> 
+key combination to begin. You must have a valid Computer Science user name to login.&nbsp; The first 
+time you login using your user name the system will ask you to reset your 
+password.&nbsp; (Note: A “good” password will consist of at least six characters 
+including some non-alphabetic characters and both upper- and lower-case letters 
+and will not appear as a word in any dictionary in any language.)&nbsp; You will then 
+be asked to confirm the new password by reentering the password.</li><br>
+<br>
+<li>In Windows 7, <b>Windows Explorer</b> will be used to navigate the file system.&nbsp; It can be used to launch applications, copy, move, and 
+delete files, and view the directory structure of a disk.&nbsp; You will find an 
+icon for Windows Explorer on your task bar (along the bottom of the desktop 
+window).<br>
+<br>
+We will use Windows Explorer to create a folder in which to place your work for 
+this course and to copy files between the common course folder and your personal 
+folder .&nbsp; Throughout the 
+semester we will distribute files that you need for each lab in the <b>CS131</b> 
+subfolder of the <b>CSCourses</b> folder.&nbsp; The CSCourses folder is mapped to the 
+drive letter <b>K:&nbsp; <br>
+<br>
+</b>When you open Windows Explorer you will see a collection of four Libraries. <br>
+<br>
+To create the CS131 folder for your work this semester,<br><br>
+<ul>
+<li>Open <b>Windows Explorer</b> by double-clicking the Windows 
+Explorer icon (looks like a manila folder) on the task bar</li>
+<li>Click the <b><font face="Times New Roman">&#9658;</font></b> 
+next&nbsp; to the icon for <strong>
+Computer</strong> (in the left panel)</li>
+<li>Click the icon for the drive 
+	labeled with our user name (<strong>Z:</strong>)</li>
+<li>Right click anywhere in the right pane, select (left click) 
+<strong>New</strong> 
+from the drop-down menu, then <strong>Folder</strong>&nbsp; (henceforward, select 
+<strong>New/Folder</strong>)</li> 
+<li>Enter <strong>CS131</strong> for the name of the new folder</li>
+
+</ul>
+<br>Now we need to locate the files for this lab in the CSCourses folder.<br><b>
+
+
+<br></b>To find the files for Lab 1, <br><br>
+<ul>
+<li>Open <b>Windows Explorer</b> by double-clicking the Windows Explorer icon on the task bar</li>
+<li>click the <b><font face="Times New Roman">&#9658;</font></b> next to the icon for 
+<b>Computer</b> (in the left panel) </li>
+<li>click the <b><font face="Times New Roman">&#9658;</font></b> next to the icon for 
+<b>cscourses (K:)</b></li>
+<li>click the <b><font face="Times New Roman">&#9658;</font></b> next to the icon for 
+<b>CS131</b></li>
+<li>click the icon for <b>Lab1</b></li><br> 
+
+</ul>
+<br>The files necessary for Lab 1 are in this folder. You need do nothing now - a little later in the lab you 
+will copy the files into the folder that Eclipse creates for you.</li><br><br>
+<li>Minimize the <b>Windows Explorer</b> window.&nbsp; Launch Eclipse by double-clicking the
+<b>Eclipse</b> icon on the desktop.<br><br>You will be asked to select a folder for your workspace. (If you are not, get 
+help from the instructor or lab assistant.)&nbsp;
+Use the browse button to find the CS131 folder you created in step 2. The path 
+would be <strong>Z:\CS131</strong>. Use 
+the checkbox that you wish this folder to be the default workspace folder. A 
+workspace is simply a folder in which Eclipse will store files on which you are 
+working.<br><br>In the Eclipse Welcome window click on the <strong>Workbench</strong> 
+icon (you will find this near the upper-right corner of the window).&nbsp;
+Examine the window view that Eclipse provides. Eclipse initially shows four 
+panes.&nbsp; I suggest you close (using the <strong>x</strong>) the <strong>
+Outline</strong> pane on the right side of the window.&nbsp; We will be most 
+interested in the <strong>Package Explorer</strong> pane along the left and the 
+unnamed edit pane in the middle of the Eclipse window.&nbsp; The Package Explorer 
+gives a view of all of the projects available. At this point there are not yet 
+any projects.<p class="Question">Create a new project named <b>Lab1</b>.&nbsp; Go to 
+<b>File</b> 
+/ <b>New</b> / <b>Java Project</b> and create a new Java project with the name 
+<b>Lab1</b>.&nbsp; You will see the <b>Lab1</b> project appear in the <b>Package</b>
+<b>Explorer</b> window.&nbsp; Expand the project by clicking the <b>
+<font face="Times New Roman">&#9658;</font></b> next to Lab1.&nbsp; You will see a 
+folder named <strong>src</strong>.&nbsp; This is where you will store source files, i.e. files 
+with <font face="monospace">.java</font> extension.&nbsp; Now we want to put two 
+Java files into this project.&nbsp; Re-open <b>Windows</b> <b>Explorer</b> and copy the 
+file <font face="monospace">HelloWorld.java</font> by right-clicking on the file 
+name and selecting <b>Copy</b>.&nbsp; Then return to Eclipse, right-click on <b>src</b> in 
+<b>Lab1</b> in the <b>Package</b> <b>Explorer</b> and select <b>Paste</b>.&nbsp; 
+Copy the file <font face="monospace">DisplayMessage.java</font> to <b>Lab1</b> 
+in the same way.&nbsp; You should see two Java source files 
+in the <b>Default Package</b> folder in <b>Lab1 \ src</b>: 
+<font face="monospace">HelloWorld.java</font> 
+and <font face="monospace">DisplayMessage.java</font>.</li><br><br>
+<li>Double-click on the program source file
+<span style="font-family:&quot;Courier New&quot;">HelloWorld.java</span> in the 
+src folder.&nbsp; The 
+source file is opened in the <b>Edit</b> pane. &nbsp;</li><br>
+<br>
+<li>To run the program, first click on the source file name (e.g., <b>
+<span style="font-family: Courier New">HelloWorld.java</span></b>) in the Package 
+Explorer, then go to the Editing pane (where the source code is located), and 
+right-click.&nbsp; From the pop-up menu, select <b>Run As</b> followed by <b>Java Application</b>. The program's output will appear in the 
+<b>Console</b> pane, which will appear  below the Edit pane.&nbsp; &nbsp;
+Alternatively, you can run a program by right-clicking on the file name in the 
+Package Explorer and select <b>Run As</b> followed by <b>Java Application</b>.</li><br>
+<br>
+<li>Modify the program so that it greets you  specifically (as opposed to the entire world).&nbsp; 
+Run the program to test your modifications.</li><br>
+<br>
+<li>Modify the program so that it displays three labeled pieces of 
+information each on a separate line as follows:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name:<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lab meeting:<br>
+with the appropriate information supplied.&nbsp; 
+<p class="Question">Modify the comments at the top of 
+the program to add your name, the date, and a description of your program 
+modifications.&nbsp; Run the program to test your modifications.</li><li><p class="Question">
+	Minimize Eclipse and open Microsoft Word. [If asked, choose &quot;Don't Make 
+	Changes&quot; as your 'update policy'.]&nbsp; Generate a cover page for this lab, which indicates the lab number, date, course name and your name. On the next page 
+write a short paragraph responding to each of the following questions:</p>
+<ul>
+	<li>
+	<p class="style2">How does Java terminate statements or instructions that 
+	are to be executed by the computer?</p></li>
+	<li>
+	<p class="style2">How does Java identify comments?</p></li>
+</ul>
+<p class="Question">The rules for writing Java programs, syntax rules, are very strict and generate an error if violated. The Eclipse editor, however, is designed to inform you of a syntax error, as is the Eclipse compiler. Generate a syntax error by removing one of the semi-colons from a line that prints a string. </p>
+<ul>
+	<li>
+	<p class="style2">Write a paragraph that describes how the editor indicates that there is an error. Record your results (note: use complete sentences that you can read six months later and know what is being discussed. For example, 
+	&quot;The Eclipse editor shows that a syntax error has occurred by ... &quot;)
+	</p></li>
+	<li>
+	<p class="Question">Attempt to run the program with the syntax error. 
+	<span class="style2">Describe what happens and how you are assisted in correcting the error</span>. Fix the error and run the program. 
+	<span class="style2">What happens?</span>
+	<b>Note: </b>you can view the compiler's guess at the cause of a syntax 
+	error by using the mouse to hover above the mark used by the editor to 
+	indicate the error.</p></li>
+	<li>
+	<p class="Question">Repeat the syntax experiment by removing ' &quot; ' that 
+	terminates the line that displays your name.&nbsp; Run the program. 
+	<span class="style2">Record and explain 
+	the error message that is generated.</span></p></li>
+	<li>
+	<p class="Question">Based upon the two experiments with syntax errors, 
+	<span class="style2">explain whether or not you found the error messages generated by the editor 
+	to be helpful</span>.</p></li>
+</ul>
+	</li>
+<li>To print a copy of your program go to the <b>File</b> menu and select the
+<b>Print</b> option.&nbsp; Find the printer Lab Laser 101. (If you do not see 
+Lab Laser 101 scroll the dialog box window to the left, if you still do not see 
+Lab Laser 101 get help from your instructor or 
+lab assistant to add that printer.&nbsp; Do not bother to print the test page if 
+you are given the opportunity to do so). <span class="style2">A copy of your program will appear on the printer in the 
+lab</span>.&nbsp; Note that programs look very similar.&nbsp; It is very important to place your 
+name prominently in a comment at the top of the program so that you (and others) 
+may identify whose output is whose.</li><br>
+<br>
+<li>Now we want to work on the second program.&nbsp; 
+Currently when you run the program you are running the program given in the file
+<span style="font-family:&quot;Courier New&quot;">HelloWorld.java</span>.&nbsp; 
+There is a second program in the Lab1 project that you need to run named
+<span style="font-family:&quot;Courier New&quot;">DisplayMessage.java</span>.&nbsp; Open the file
+<span style="font-family:
+&quot;Courier New&quot;">DisplayMessage.java</span> in the editor window by 
+double-clicking on the file name 
+in the Package Explorer. <br>
+<br>
+Run this program.&nbsp; You will notice that this program displays a message 
+using a dialog box rather than using a console window as previously done.&nbsp; 
+Click the <b>OK</b> button to dismiss the dialog box.</li>&nbsp; Also click the 
+close box on the full application window.<br>
+<br>
+<li>Examine the code for the program in the editor and modify the program by changing the 
+message that is displayed.&nbsp; In particular, display the same information 
+requested in Step 7 above in the dialog box.&nbsp; 
+<p class="Question">First modify the program to 
+display the messages in a sequence of dialog boxes.&nbsp; Then modify the 
+program to display all of the messages in a single dialog box.&nbsp; (Hint: You 
+need to use one of the &quot;escape sequences&quot; discussed on pages 63-64 of your 
+textbook and illustrated in the program on page 64.) </p>
+<p class="Question">Change the opening comments to reflect the modifications you 
+made.&nbsp; In particular, add your name, the date, and a description of the 
+modifications to the opening comments. <br>
+<br>
+Note that an <em>object</em>, myWindow, is created in this program. 
+Note also that <em>messages</em> are sent to the object such as myWindow.setLocation(), 
+myWindow.setSize(). The data inside the parentheses are called <em>arguments</em>. You 
+will change the values passed as arguments to the object. Write down all of the 
+values that are passed to the myWindow object in the original version of the 
+program - you will need to reset them later. Please write a paragraph explaining 
+the results of the following changes:
+    <br />
+    <ul>
+	<li>
+	<p class="Question">Change the values passed to myWindow in the setLocation 
+	message (you may need to change them three or four times). 
+	<span class="style2">What does this message do? What is the largest x and y coordinate 
+	that can be passed that enable myWindow to be completely visible? </span> </p></li>
+	<li>
+	<p class="Question">Place myWindow in the middle of the screen. Change the 
+	values passed in the setSize message. Place the window in the upper left 
+	hand corner of the monitor. <span class="style2">What is the largest window size that can be set 
+	and still have the window completely visible? What happens if the size is 
+	set to 0,0?</span></p></li>
+	<li>
+	<p class="style2">What does setTitle do? </p></li>
+	<li>
+	<p class="Question">Comment the line of code with the setVisible message (to 
+	comment one line, use the two forward slashes, //, at the beginning of the 
+	line). <span class="style2">What happens? What is 
+	the default value of the visibility of a window?</span></p></li>
+</ul>
+<p class="Question">Reset the various arguments in the messages to their 
+original values. Change the opening comments to reflect the modifications you made.&nbsp; In particular, add your name, the date, and a description of the modifications to the opening comments.&nbsp; 
+<span class="style2">Print a copy of the modified program</span> and hand this in as part of your lab.</p>
+<li>Now copy the program <span class="style1">DisplayMessageGUI.java
+</span>from the CSCourses folder as you did before. Add this program to your project&nbsp; 
+(see step 3 for a reminder). 
+Also copy the file <span class="style1">mypic.jpg</span>.&nbsp; 
+Instead of adding this file to the <strong>src</strong> folder, add it to the 
+parent project (<strong>Lab1</strong>) folder.&nbsp; Run the program. 
+<span class="style2">What do you see?</span>  Explore the menu choices (both of them).  Open the file and look at the source code.
+&nbsp; Find the statement that causes the message to be printed.&nbsp; As you did in the previous step, modify the message that is shown so 
+that it displays the same information as in Step 7.</li><br>
+<br>
+<li>Now change the program so that the title bar includes your name and so that the 
+About box has the correct info.&nbsp; (For purposes of today's lab, you may 
+claim full authorship of the program; we'll talk about proper credit later.)&nbsp; 
+Make sure that the picture is relevant as well.&nbsp; (Hint: you have a cell 
+phone...)&nbsp; Use the Snipping Tool to take &quot;<a href="../ScreenSnapshots.htm">snipshots</a>&quot; 
+of the two modified windows and <span class="style2">include those images with 
+your lab</span>.<br>
+<br>
+
+Change the opening 
+comments to reflect the modifications you made.&nbsp; In particular, add your name, 
+the date, and a description of the modifications to the opening comments.&nbsp; 
+<span class="style2">Print 
+a copy of the modified program</span> and hand this in as part of your lab as well.
+</li><br>
+&nbsp;<br>
+<li>When you have completed the lab you need to properly 
+exit the lab machine.&nbsp; <b>Do not turn off the power of the machine or the 
+monitor.</b>&nbsp; Simply log off the machine by clicking the <b>Start</b> 
+button and then selecting <b>Log Off</b> from the menu accessed with the <b>
+<font face="Times New Roman">&#9658;</font></b>. 
+</li>
+</ol>
+
+<p class="Question" style="margin-left:0in;text-indent:0in"><b style="mso-bidi-font-weight:
+normal"><span style="mso-bidi-font-family:Arial">Note:<br><br>
+</span></b><span style="mso-bidi-font-family:Arial;mso-bidi-font-weight:bold">The
+computers in Walsh 101 and 103 have been set up by the Computer Science
+Department to allow a student’s personal preferences to be available on any
+lab machine.<span style="mso-spacerun: yes">&nbsp; </span>In particular you need to understand that you can save anything you want
+to the C: drive of a lab machine but that there is no guarantee that it will be there when you
+return to that machine in the future.<span style="mso-spacerun: yes">&nbsp; </span>However
+anything you save to your network folder (<strong>Z:</strong>) will be available to you on any lab
+machine you log in to.<o:p>
+</o:p>
+</span></p>
+<p class="Question" style="margin-left:0in;text-indent:0in"><b style="mso-bidi-font-weight:
+normal"><span style="mso-bidi-font-family:Arial">&nbsp;<o:p>
+</o:p>
+</span></b></p>
+<p class="Question" style="margin-left:0in;text-indent:0in"><b style="mso-bidi-font-weight:
+normal"><span style="mso-bidi-font-family:Arial">Hand in:<o:p>
+</o:p>
+</span></b></p>
+<p class="Question" style="margin-left:0in;text-indent:0in">Prepare a cover page including your name, 
+title of the lab, your lab section, your lab instructor’s name and the date.&nbsp; Staple 
+together and then hand in the cover page, the page(s) answering the questions 
+posed in Steps 8, 11, and 12; the snipshots from Step 13; and the printed programs from Steps 9, 11, and 13.&nbsp; 
+The cover page and all essay answers to questions should be prepared using 
+Microsoft Word. <br>
+<![if !supportLineBreakNewLine]>&nbsp;<![endif]></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:Arial">Help
+Policy:<o:p>
+</o:p>
+</span></b></p>
+<p class="MsoNormal">Help Policy in Effect for This Assignment:&nbsp; <u>Individual Project with Limited Collaboration
+</u></p>
+<p class="MsoNormal">In particular, you may discuss the assignment and
+concepts related to the assignment with the following persons, in addition to an
+instructor in this course: <u>any St. Bonaventure Computer Science instructor;
+any student enrolled in CS 131</u>.<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial"><span style="mso-spacerun: yes">&nbsp; </span><o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal">You may use the following materials produced by other
+students:&nbsp; <u>NONE</u>. </p>
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:Arial">&nbsp;<o:p>
+</o:p>
+</span></p>
+
+</body>
+
+</html>

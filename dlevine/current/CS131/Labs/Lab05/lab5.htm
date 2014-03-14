@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>CS 131 Lab 5 - Spring 2014 - Working with GUI Classes</title>
+<style type="text/css">
+.style3 {
+	text-align: center;
+	font-size: 14.0pt;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style11 {
+	text-align: center;
+	font-size: small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ p.MsoNormal
+	{margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in
+}
+.style2 {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: small;
+}
+.style18 {
+	font-family: Verdana;
+	font-size: small;
+}
+.style12 {
+	font-size: small;
+	font-family: Verdana;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style13 {
+	font-size: small;
+	font-family: Verdana;
+	margin-left: .5in;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style14 {
+	margin-bottom: 0;
+}
+.style26 {
+	font-family: "Courier New";
+}
+.style28 {
+	margin-bottom: 0;
+	font-family: Verdana;
+	font-size: small;
+}
+.style30 {
+	font-size: small;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style33 {
+	text-indent: 0in;
+	font-family: Verdana;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: small;
+}
+.style34 {
+	font-family: "Courier New";
+	font-style: italic;
+}
+.style35 {
+	font-family: Verdana;
+}
+.style36 {
+	color: #FF0000;
+}
+.style37 {
+	font-family: "Courier New", Courier, monospace;
+}
+</style>
+</head>
+
+<body>
+
+<p class="style3" align="center">Lab 5: Working with GUI Classes</p>
+<p class="style11" align="center">Steven K. Andrianoff</p>
+<p class="style11" align="center">Robert Harlan</p>
+<p class="style11" align="center">David Levine</p>
+<p class="style11" align="center">Computer Science Department</p>
+<p class="style11" align="center">St. Bonaventure University</p>
+<p class="style11" align="center">Copyright 2009</p>
+<p class="style11" align="center">&nbsp;</p><p class="style11" align="center">&nbsp;</p><p class="MsoNormal">
+<span class="style2">Due: </span>
+<span class="style18">Friday, February 14, 4 p.m.</span></p><p class="style30">&nbsp;</p>
+<p class="style12">Objective:</p><p class="style30">This lab introduces the 
+classes in Java's javax.swing package to create a GUI (Graphical User 
+Interface), which enables you to display both text and graphics. This is a good 
+introduction to object-oriented programming, since all of the objects used are 
+instances of classes in the javax.swing package. The lab is based on the 
+material in Sections 3.9 - 3.11 of the Lewis and Loftus text.</p>
+<p class="style30">&nbsp;</p>
+<p class="style30">Assuming you are working in teams of two, you will create a window with pictures of two people with labels 
+below the pictures to identify them. If you work on your own you will 
+have to find multiple pictures of yourself, or perhaps a picture of a relative 
+or friend and you.</p><p class="style13">&nbsp;</p><p class="style12">Background:</p>
+<p class="style30">In Java a graphical component is an object that represents a 
+part of a window: for example, labels, text areas, buttons, and images are all 
+components used in creating a GUI.<br />
+<br />
+Graphical components are housed in a special component called a container. The 
+window we created in Lab 1 is an example: myWindow was an object instance of the 
+JFrame class. Windows, in turn, can have containers within them that further 
+organize components: in this lab we will use panels (instances of the JPanel 
+class) to organize components.</p>
+<p class="style30">&nbsp;</p>
+<p class="style30">The major difference between a JFrame object (a window) and a 
+panel (a JPanel object) is that windows are managed by the operating system of 
+the computer on which they appear. In contrast, panels can only exist within a 
+window.&nbsp; You will see how it all works in the lab!</p>
+<p class="style30">&nbsp;</p>
+<p class="style30">You may wish to pull out a copy of the DisplayMessage.java 
+you used in Lab 1.&nbsp; This shows 
+how to create windows. You may also wish to consult sections 3.9 - 3.11 of the 
+text for other 
+examples.</p>
+<p class="style30">&nbsp;</p>
+<p class="style12">Instructions:</p>
+<ol>
+	<li>
+	<p class="style28">Launch the Eclipse development environment. Create a project named 
+	Lab5. Create a new class named OurPictures with a main method. <br />
+	<br>
+	</p>
+	</li>
+	<li>
+	<p class="style28">Import the GUI packages from the Java library: <br />
+	<br />
+	<span class="style26">import javax.swing.*;<br />
+	import
+	java.awt.*;</span></p>
+	<p class="style28">Load the two pictures you will use for the lab into the 
+	project folder: remember to place them in the top level of the project 
+	folder, not in the src folder.</p>
+	<p class="style28">Decide whose picture you will work with first, as the 
+	first step will be to create a window with one picture and a label.&nbsp;</p>
+	<p class="style28"><br />
+	</p>
+	</li>
+	<li>
+	
+<p class="style14">
+<span class="style18">Declare and create a JFrame object named myWindow. Recall 
+that the string parameter to the JFrame constructor is the title for the window, 
+so pick an appropriate title. For now you need not size or locate the myWindow 
+object, but do make it visible. One property of containers like myWindow is that 
+they will resize themselves to display all of the components they are required 
+to display.</span></p>
+<p class="style14">
+<span class="style18">Add the following statement below the one that creates 
+your myWindow object, which brings the program to a graceful end once the window 
+is dismissed</span>:<span class="style18"><br />
+</span><font SIZE="2"><br />
+<span class="style26">myWindow.setDefaultCloseOperation(JFrame.</span></font><span class="style34"><font SIZE="2">EXIT_ON_CLOSE</font></span><font SIZE="2"><span class="style26">);</span></p>
+</font>
+<p class="style28">
+Run the program and <span class="style36">describe the output. For example, where did it appear, what 
+was the background color, how big was it, what parts did it have?</span> Note that you 
+are able to resize the window and move it around. List the parts and 
+capabilities of a JFrame object created by the constructor by default - i.e., 
+without you having to do anything except call the constructor.</p>
+<p class="style18">
+At this point you may wish to give your window a size and location on the screen as you did in 
+<a href="../../Fall2013Labs/Lab01/Lab1.htm">Lab 1</a>.</p>
+	<li><span class="style18">We need to add some components to the window for it to display. Add an image 
+component and a label component with the following lines (change the quoted 
+	strings appropriately):<br />
+<br />
+	</span>
+<span class="style26"><font SIZE="2">ImageIcon imgMe = <b>new</b> ImageIcon(&quot;mypic.jpg&quot;);<br />
+JLabel lblName = <b>new</b> JLabel(&quot;Me doing my thing&quot;, imgMe, 
+SwingConstants.<i>CENTER</i>);<br />
+lblName.setVerticalTextPosition(SwingConstants.<i>BOTTOM</i>);<br />
+lblName.setHorizontalTextPosition(SwingConstants.<em>LEFT</em></font></span><font SIZE="2"><span class="style26">);</span></font><p class="style28">
+You saw the ImageIcon class in <a href="../Lab02/Lab2.htm">Lab 2</a>.&nbsp;
+	<span class="style36">Where was it used?</span> The JLabel 
+class enables you to create an object that displays text and/or graphics. In 
+this case we do both. Note, the parameter to the ImageIcon 
+constructor should be the file name of the image you are using first, and the 
+first parameter to the JLabel constructor should be the description you wish to 
+display with the picture.<br />
+<br />
+The next two lines indicate that the text in the image should be aligned to the 
+left and below the image.&nbsp; (Note: if you find this position to be less than 
+	ideal, you might be able to make an &quot;intelligent guess as to how to change 
+	the alignment.)<br />
+<br />
+The parameters to the constructor and object positioning the label and the text 
+are examples of library class constants. Their names are designed to describe what 
+they do. Make sure to look at the <em>intellisense</em> when you type in, e.g., 
+SwingConstants followed by the period: it shows you what values are available 
+and makes selecting the appropriate one easier.</p>
+	<p class="style28">
+Run the program and <span class="style36">describe the output</span>. Surprised? (Don't panic - we will fix 
+the problem in the next step.)</p>
+	<p class="style28">
+&nbsp;</p>
+	</li>
+	<li class="style18">
+	
+We need to add the components created in Step 4 to the window. We will add them 
+to a panel container and then add the panel to the <span class="style37">myWindow</span> object. Here is how:<font SIZE="2"><p ALIGN="LEFT">
+<span class="style26">JPanel pnlPicture = new JPanel();<br />
+pnlPicture.add(lblName);<br />
+myWindow.getContentPane().add(pnlPicture);<br />
+myWindow.pack();</span></p>
+Make sure that you use the names of <em>your</em> objects. I have named my panel 
+container object <span class="style37">pnlPicture</span>.<br />
+<br />
+Run the program and <span class="style36">describe the output</span>. In particular, describe the size of 
+your picture and its size in relation to the window in which is appears. <br />
+<br />
+</font>
+	
+	</li>
+	<li class="style18">
+	
+You need to do some experimentation at this point. If your picture is 
+large (more than half of the screen) you need to make it smaller. Use Microsoft Office Picture Manager to resize it. 
+	(You can find Microsoft Office Picture Manager on the lab machines by going 
+	to the <strong>Start Menu</strong>, then to <strong>All Programs</strong>, 
+	then to <strong>Microsoft Office</strong>, and finally to <strong>Microsoft 
+	Office 2010 Tools</strong>.) Save the 
+resized image and run the Java program. Go back and forth between resizing and running the program until the picture is of a reasonable size.<br />
+<br />
+Record the size of the image that you decide looks best in the lab write-up. 
+Determine whether or not changing the size of the window in the program makes 
+any difference as to its size when the program is run. <span class="style36">State your conclusion and 
+how you reached it</span> in the write-up.<br />
+<br>
+	
+	</li>
+	<li class="style18">
+	
+You are able to suggest a preferred size for the panel that contains the label. 
+Add the following statement below the creation of the panel object:
+<br /><br />
+<span class="style26">pnlPicture.setPreferredSize(new 
+Dimension(800, 500));</font></span><br />
+<span class="style35"><br />
+Run the program and describe the results. Experiment with dimensions that are 
+either larger and smaller than your image and describe the results. Once you 
+have the size that is best, <span class="style36">record the dimensions in your write-up</span>.<br />
+	</span>
+	&nbsp;</li>
+	<li>
+	
+	<p class="style28">
+Create a second image and a second label for the second picture you selected for the lab. 
+Add the label to the panel (you need only add a second add message and pass the 
+name of the label as a parameter).<br />
+<br />
+Run the program and <span class="style36">describe the results</span>.<br />
+<br />
+Use the knowledge gained from your experiments in Steps 6 and 7 to get the two 
+images to appear side by side with an appropriate label <em>under</em> each picture. You 
+may wish to make sure the two images are the same size using the method you did 
+in Step 6. Experiment until the two pictures appear side by side in a window 
+	(with their labels below them). 
+You may wish to re-title your window and/or change the background color of 
+either the window, the panel, or both (you have to figure out how to do it, so 
+use intellisense).</p>
+	<p class="style30" style="text-indent:0in">&nbsp;</p>
+	
+	</li>
+	<li>
+	
+	<p class="style30" style="text-indent:0in">Once you are satisfied with your program, run the program and use 
+	the <em>snipping tool</em> to capture 
+	an image of the output. Copy and <span class="style36">paste the image into your lab write-up</span>. 
+	<span class="style36">Print the program source code 
+	and attach it to your lab write-up</span>.<br>
+	</p>
+	
+	
+	</li>
+</ol>
+<p class="style28"><strong>Hand in:</strong></p>
+<p class="style30" style="text-indent:0in;page-break-after:avoid">The write-up you hand in for this lab should include:</p>
+<ul>
+	<li>
+	<p class="style33" style="page-break-after:avoid">
+	the results requested in Steps 3 - 8; </p>
+	</li>
+	<li>
+	<p class="style33" style="page-break-after:avoid">
+	the program listing and image requested in Step 9;</p>
+	</li>
+</ul>
+<p class="style12">&nbsp;</p>
+<p class="style12">Help Policy:</p><p class="style30">&nbsp;</p>
+<p class="style30">Help Policy in Effect for This Assignment:&nbsp; <u>Individual Project with Limited Collaboration</u></p>
+<p class="style30">&nbsp;</p><p class="style30">In particular, you may discuss the assignment and concepts related to the assignment with the following persons, in addition to an instructor in this course: <u>any St. Bonaventure Computer Science instructor; any student enrolled in CS 131</u>. You may use the following materials produced by other students:&nbsp; <u>NONE</u>.</p>
+
+</body>
+
+</html>

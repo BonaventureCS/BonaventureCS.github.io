@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>CS 232 Spring 2012 - Skyline Phase I and Corona</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.0  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Dan Eisemann">
+	<META NAME="CHANGED" CONTENT="20100201;13583100">
+	<META NAME="Info 2" CONTENT="">
+	<META NAME="Info 3" CONTENT="">
+	<META NAME="Info 4" CONTENT="">
+	<META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+	<META NAME="CHANGEDBY" CONTENT="Dan Eisemann">
+	<style type="text/css">
+.style1 {
+	font-family: "Courier New", Courier, monospace;
+}
+</style>
+	</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P>&nbsp; 
+</P>
+<P ALIGN=CENTER><FONT SIZE=4><B>CS 232<BR>Algorithms<BR>Skyline
+Testing</B></FONT></P>
+<P ALIGN=CENTER>Steven K. Andrianoff<BR>
+Coty Collins<BR>David B. Levine<BR>Computer Science Department<BR>St.
+Bonaventure University<BR>Copyright, 2013</P>
+<P><B>Objective </B>
+</P>
+<P>&nbsp; &nbsp; 
+</P>
+<P>By the conclusion of this lab period, you will have:</P>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Gained experience with unit testing and the Corona Test Generator.</P>
+<P STYLE="margin-left: 0.25in; text-indent: -0.25in">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Authored test cases for the Skyline project.</P>
+<P>&nbsp;</P>
+<P><B>Background</B></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The goal is to create a
+simple JUnit test.&nbsp; You may have done this before by hand, but
+the Corona Test Generator is a tool to make Unit test generation
+quick and easy. 
+</P>
+<P>&nbsp; 
+</P>
+<P><B>Instructions:</B> 
+</P>
+<OL>
+	<LI><P>Launch Eclipse and start a new project.  Add <a href="Corona.jar">Corona.jar</a>, 
+	<a href="SkylineHelper.jar">SkylineHelper.jar</a>,
+	<a href="Hopeful.jar">Hopeful.jar</a>, and <a href="Buggy.jar"> Buggy.jar</a> 
+	to your project.&nbsp; </P>
+	<LI><P>Add Corona.jar, SkylineHelper.jar and either Hopeful.jar or
+	Buggy.jar to the build path of your new project.&nbsp; To do so, right click 
+	on the particular .jar file and choose <strong>Build Path:Add to Build Path</strong>.</P>
+	<LI><P>Right-click on the project and choose <strong>Build Path:Add 
+	Libraries</strong>.&nbsp; Choose to add JUnit and select version 4.</P>
+	<LI><P>Right-click on Corona.jar and select <strong>Run as...:Java Application</strong>.  This will launch the Corona
+	Test Generator.&nbsp; Select CoronaJavaFrame as your application to run.</P>
+	<LI><P>Enter your name in the name field.&nbsp; Then choose to <strong>Add 
+	Stateless Test</strong>.&nbsp; Test the makeSkyline method within the 
+	Skyline class.&nbsp; Name the test according to the convention discussed in 
+	class, i.e. “test(Your initials)2014OneBuilding”.&nbsp; Enter the 
+	appropriate data for the input parameters, the output parameters and the 
+	comments (Notes field).&nbsp; Press <strong>Okay</strong> when you are done 
+	with this test.</P>
+	<LI>
+	<P>When your test suite is complete, click on the <strong>Generate</strong> 
+	button.  This
+	will generate the JUnit code for the tests; save the file somewhere OUTSIDE 
+	your project.&nbsp; Then, using Windows Explorer, copy the file and using 
+	Eclipse paste it in to the <span class="style1">src</span> folder. You 
+	should see the
+	file containing your TestCase in the default
+	package.  You can then
+	run the generated test case by right-clicking on it, and selecting
+	<strong>Run as...:JUnit Test</strong>.  If the
+	expected output matches the actual output derived from the given
+	input, you will see a green bar and a summary of the tests run.</P>
+	<LI><P>You are now ready to add more tests.&nbsp; You can return to the 
+	Corona Test Generator window and add more.&nbsp; You may save your progress 
+	at any time as demonstrated in class.&nbsp; You can also test &quot;bogus&quot; tests 
+	by removing Hopeful.jar from the Build Path and adding Buggy.jar in its 
+	place.</P>
+</OL>
+<P><B>To Hand In:</B> 
+</P>
+<P>The file that you named in step 6, can serve as your submission to
+phase I although you should check that comments are &quot;up to snuff&quot;.</P>
+<P><B>Assignment Type (see Academic Practices and Policies Document):</B></P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Individual assignment, no collaboration. 
+</P>
+<P>&nbsp; 
+</P>
+</BODY>
+</HTML>

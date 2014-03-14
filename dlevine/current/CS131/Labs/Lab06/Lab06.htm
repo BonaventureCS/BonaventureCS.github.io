@@ -1,0 +1,262 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Lab 6 - Spring 2014</title>
+<style>
+<!--
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+.auto-style1 {
+	font-size: smaller;
+}
+.style1 {
+	color: #FF0000;
+}
+.style2 {
+	color: #FF0000;
+	font-style: italic;
+}
+.style3 {
+	font-family: "Courier New";
+}
+-->
+</style>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center" style="text-align: center"><b>
+<span style="font-size: 14.0pt">Lab 6: Rolling the Dice Again (and Again)</span></b></p>
+<p class="MsoNormal" align="center" style="text-align: center">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">Steven K. Andrianoff</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">Robert Harlan</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">David Levine</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">Computer Science Department</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">St. Bonaventure University</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">Copyright,&nbsp; 2001, 2003</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align: center">
+<span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt"><b>Due:&nbsp;&nbsp;&nbsp; </b>
+Friday, February 21, at 4 p.m.<br>
+<br>
+&nbsp;</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Objective:</span></b></p>
+<p class="MsoNormal" style="margin-left: .5in"><span style="font-size: 11.0pt">
+This lab introduces the <i>if</i> statement and the <i>for</i> statement in the 
+context of rolling dice. </span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Background:</span></b></p>
+<p class="MsoNormal" style="margin-left: .5in"><span style="font-size: 11.0pt">
+Section 5.2 of Lewis &amp; Loftus introduces the <i>if</i> statement.&nbsp; Section 
+5.8 of Lewis &amp; Loftus introduces the <i>for</i> statement.&nbsp; This lab uses the Dice class from Lab 2.</span></p>
+<p class="MsoNormal" style="margin-left: .5in"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Instructions:</span></b></p>
+<p class="Question">1.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Launch the Eclipse 
+development environment. Create a new project named <b>Lab6</b>.&nbsp; <br>
+<br>
+Add the file </span><span style="font-family: Courier New" class="auto-style1">
+<a href="Dice.java">Dice.java</a></span><span style="font-family: Times New Roman"> 
+to your project.&nbsp; You can use the link earlier in this paragraph, you can find this file in
+</span><span style="font-family: Courier New" class="auto-style1"> 
+CSCourses \ CS131 \ Lab6</span>. or you can copy/paste the file from your Lab 2 
+assi<span style="font-family: Times New Roman">gnment.&nbsp; (</span><span style="font-family: Courier New" class="auto-style1">Dice.java</span><span style="font-family: Times New Roman"> 
+defines the same Dice class as in Lab 2.) <br>
+<br>
+Create a main class named DiceMain.&nbsp; Within the main method create <em>two</em> 6-sided 
+Dice objects, roll each of the dice, and calculate the sum of the roll values.&nbsp; Use the 
+console (System.out.println) to display the values of the two dice rolls and their sum.<br>
+<br>
+Test the program to be sure your code is correct.<br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">2.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Modify the program 
+DiceMain so that it requests and obtains a value from the user (the user’s 
+“guess”) then rolls the two dice and displays a message based on the sum of the 
+roll values:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “You win!”&nbsp; If the sum matches the user’s guess.<br>
+and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “You lose!&nbsp; The correct answer was:&nbsp; X”&nbsp; If the sum does not match the 
+user’s guess.<br>
+<br>
+Use an <i>if</i> statement to compare the sum with the user’s guess.&nbsp; The 
+statement should have the form:<br>
+&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family: Courier New">
+<span class="auto-style1">if (sum == guess)</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; {</span><br class="auto-style1">
+<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; &lt;display the message: “You win!”&gt;</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; }</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; else</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; {</span><br class="auto-style1">
+<span class="auto-style1">&nbsp;&nbsp;&nbsp; &lt;display the message: </span> 
+<br class="auto-style1">
+<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; “You lose! The correct answer was: 
+[sum]”&gt;&nbsp; </span>
+</span></p>
+<p class="Question"><span class="style3">&nbsp;&nbsp; </span>
+<span style="font-family: Courier New">
+<span class="auto-style1">// Where [sum] is replaced by the actual sum</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; }</span><br>
+<br>
+</span><span style="font-family: Times New Roman">Note: Use the Scanner class to input the user's guess.</span><span style="font-family: Courier New"><br>
+<br>
+</span><span style="font-family: Times New Roman">Include <span class="style1">a copy of the 
+statements you used to 
+accomplish this</span> in your lab write-up.&nbsp; (You may merely provide a copy of 
+the body of the main method.)<br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">3.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Modify the DiceMain 
+program to play a different game.&nbsp; The program will not obtain a value from the 
+user.&nbsp; Instead the program will roll the dice and declare:<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; “You win!” if the sum is greater than 7<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; “You lose!”&nbsp; if the sum is less than 7<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; “There is a tie.” if the sum is 7<br>
+In addition to the message the program should display the value of the sum. <br>
+<br>
+Run the modified program enough times to test each of the three cases.<br>
+<br>
+Include <span class="style1">a copy of the statements you used to accomplish this</span> in your lab 
+write-up. <br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">4.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Modify the DiceMain 
+program so that it appears as it did in Step 1 where the two dice were rolled 
+and the values of the rolls and the sum were displayed.&nbsp; Modify this program to 
+roll the two dice 20 times, displaying the values of the rolls and sum each 
+time.&nbsp; To do this enclose the statements to roll the dice and display the values 
+of the rolls and the sum in a <i>for</i> loop.&nbsp; The for statement has the form:<br>
+</span><span style="font-family: Courier New">&nbsp; <span class="auto-style1">for (int i = 0; i &lt; 20; i++)</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; {</span><br class="auto-style1">
+<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; &lt;statements to be repeated 20 times&gt;</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; }</span><br>
+<br>
+</span><span style="font-family: Times New Roman">Include <span class="style1">a copy of the 
+statements you used to 
+accomplish this</span> in your lab write-up. <br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">5.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Modify the DiceMain 
+program to roll two dice 20 times and count the number of times a 7 is rolled.&nbsp; 
+To do this introduce a variable named <i>count7</i> to keep track of the number 
+of 7’s.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; <span class="style1">What type of variable should
+</span><span class="style2">count7</span><span class="style1"> be?</span><br>
+-&nbsp;&nbsp;&nbsp;&nbsp; <span class="style1">What initial value should be assigned to
+</span><span class="style2">count7</span><span class="style1">?</span><br>
+<br>
+Declare and initialize the variable <i>count7</i> <u>before</u> the for loop.<br>
+<br>
+To count the number of 7’s, after the sum of the rolls is calculated <u>inside</u> the for 
+loop, check if the sum is 7.&nbsp; If it is 7 add 1 to the variable count7.&nbsp; You can 
+use a simple if statement of the form:<br>
+<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; </span> </span><span style="font-family: Courier New">
+<span class="auto-style1">if (&lt;condition&gt;)</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; {</span><br class="auto-style1">
+<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; &lt;do what is necessary&gt;</span><br class="auto-style1">
+<span class="auto-style1">&nbsp; }</span><br>
+</span><span style="font-family: Times New Roman">to do this.&nbsp; Display the 
+number of 7's <u>after</u> the for 
+loop terminates.&nbsp; (Keep the code to display the values 
+of each roll and sum so you can verify that your code is correct.)<br>
+<br>
+Include <span class="style1">a copy of the statements you used to accomplish this</span> in your lab 
+write-up. <br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">6.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Modify the program 
+DiceMain to roll the dice 10,000 times and count the number of 7’s.&nbsp; Comment out 
+the code that displays the values of each roll and sum within the loop.&nbsp; <br>
+<br>
+Run the program five times and <span class="style1">record your results</span>.&nbsp; <br>
+<br>
+In your lab write-up determine the mathematical probability of rolling a seven.&nbsp; (Hint: there 
+are 36 possible outcomes of the rolls: 1-1, 1-2, 1-3, . . . , 2-1, 2-2, . . .&nbsp; 
+Each of the 36 outcomes is equally likely.&nbsp; Of the 36 possible outcomes how many 
+of them yield a seven?)&nbsp; <span class="style1">Compare this number with the number of sevens rolled in 
+each of the five runs</span>. &nbsp;The comparison provides a measure of the quality of the 
+random number generator that is used in Java.&nbsp; <br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question">7.
+<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">
+&nbsp;&nbsp;&nbsp; </span><span style="font-family: Times New Roman">Finally modify the program 
+DiceMain to ask the user for the number of times to roll the dice then roll the 
+dice the number of times requested and count the number of sevens.&nbsp; Be sure to 
+display the values of each roll.<br>
+<br>
+Add <span class="style1">a copy of the output from executing this program</span> 
+to your report.&nbsp; Document your code.&nbsp;&nbsp; <span class="style1">Print a copy of this program</span> 
+and hand it in with your lab.<br>
+<![if !supportLineBreakNewLine]><br>
+&nbsp;<![endif]></span></p>
+<p class="Question"><u><span style="font-family: Times New Roman">Extra Credit:</span></u><span style="font-family: Times New Roman">&nbsp;
+<br>
+Modify the program DiceMain to ask the user for the number of times to roll the 
+dice then roll the dice the number of times requested and count the number of 
+doubles.&nbsp; Be sure to display the values of each roll.<br>
+<br>
+<span class="style1">Print a copy of this program</span> and hand it in with your lab.<br>
+<![if !supportLineBreakNewLine]><br>
+<![endif]></span>
+<span style="font-size: 11.0pt; font-family: Times New Roman; letter-spacing: -.1pt">
+&nbsp;</span></p>
+<p class="Question" style="text-indent: 0in; margin-left: 0in"><b>
+<span style="font-family: Times New Roman">Hand in:</span></b></p>
+<p class="Question" style="text-indent: 0in">
+<span style="font-family: Times New Roman">The write-up you hand in for this lab 
+should include:<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; the answers to the questions in Step 5.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; the results with the discussion of results requested in Step 6.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; a discussion including the statements requested in Steps 2-5.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; the printed copy of your output requested in Step 7.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; the printed copy of the source code requested in Step 7.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; the printed copy of the source code extra credit program (if completed).</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Help Policy:</span></b></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">Help Policy in Effect for 
+This Assignment:&nbsp; <u>Group Project with Limited Collaboration</u></span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">In particular, you may 
+discuss the assignment and concepts related to the assignment with the following 
+persons, in addition to an instructor in this course: <u>any member of your 
+group; any St. Bonaventure Computer Science instructor; and any student enrolled 
+in CS 131</u>. &nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">You may use the following 
+materials produced by other students:&nbsp; <u>materials produced by members of your 
+group</u>.</span></p>
+<p class="MsoNormal">&nbsp;</p>
+
+</body>
+
+</html>

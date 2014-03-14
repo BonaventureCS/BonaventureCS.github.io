@@ -1,0 +1,22 @@
+{% include header.html %}
+{% include body.html %}
+<div class="homepage-navbar-ext container">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3">
+      <img src="http://www.sbu.edu/images/default-source/brei-dev/logo_footer.png?sfvrsn=4" />
+    </div>
+  </div>
+  <div class="navbar navbar-default navbar-static navbar-hp" role="navigation">
+      <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    {% include navigation.html %}
+  </div>
+    {{page.content}}
+    {% include footer.html %}

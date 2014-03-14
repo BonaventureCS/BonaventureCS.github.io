@@ -1,0 +1,275 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Lab 7 - Spring 2014</title>
+<style type="text/css">
+.style1 {
+	font-size: 11pt;
+}
+.style4 {
+	color: #FF0000;
+}
+.style5 {
+	color: #FF00FF;
+}
+.style8 {
+	color: #000000;
+}
+.style9 {
+	color: #00FF00;
+}
+</style>
+</head>
+
+<body>
+
+<h2 align="center">Lab 7: String Things<br>
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Steven K. Andrianoff<br>
+Robert Harlan<br>
+David Levine<br>
+Computer Science Department<br>
+St. Bonaventure University<br>
+Copyright, 2001, 2003</span></h2>
+<p class="MsoNormal"><span style="font-size: 11.0pt">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt"><b>Due:&nbsp;&nbsp;&nbsp; </b></span>
+Sunday, March 9, 8 a.m.</p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Objective:</span></b></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style="font-size: 11.0pt">
+This lab includes several different experiments involving the String class.&nbsp; You 
+will experiment with the lengths of various strings including the empty string 
+and the null string.&nbsp; You will experiment with the comparison of two strings for 
+equality.&nbsp; You will process the characters in a string using the String method
+<i>charAt()</i>.&nbsp; You will learn how to use the <i>Scanner</i> class to 
+input Strings (as opposed to numbers)from the console.&nbsp; Finally you will access and then process the words in a string 
+using the <i>Scanner</i> class.</span></p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Note:</span></b></p>
+<p class="style1" style="margin-left:.5in">Because of the large number of 
+similar experiments being performed, it is <span class="style9"> <em>very important</em></span> that you 
+label your output carefully; seeing several messages such as &quot;They are equal&quot; is 
+unhelpful if &quot;They&quot; are changing throughout the lab.&nbsp; You are all capable 
+of producing (sometimes long) fully labeled examples of output.&nbsp; Failure to 
+do so, WILL result in point deductions throughout the lab.&nbsp; If you are 
+unsure about what constitutes a fully labeled example, ask!</p>
+<p class="MsoNormal"><b><span style="font-size: 11.0pt">Instructions:</span></b></p>
+<p class="Question">1. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">Launch the Eclipse 
+development environment and create a new project named Lab7.&nbsp; Create a main 
+class in which to run experiments with strings.&nbsp; (Call it StringMain or anything 
+else appropriate.)<br>
+<br>
+Write code to determine the lengths of various strings:<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; empty1 = 
+“empty“<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; empty2 = ““<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; empty3 = null<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zero = “0“<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; blank = “ “<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nothing (given no value)<br>
+</span><span style="font-family:&quot;Times New Roman&quot;"><br>
+<span class="style4">Record the results</span> you get from each of the six strings.&nbsp; Note: if 
+finding the length of any of these strings generates an error then record the 
+error and identify the offending line(s) and re-run the code with the offending 
+line(s) commented out.<br>
+<br>
+<span class="style4">Print a copy of the program</span> you used and turn it in with your lab. <br>
+&nbsp;</span></p>
+<p class="Question"><span style="font-family: Times New Roman">2.&nbsp;&nbsp;&nbsp; 
+Up to this point we have used JOptionPane.showInputDialog() to obtain textual input from 
+the user.&nbsp; This technique makes use of a dialog box.&nbsp; It is also 
+possible to do this using a Scanner and the console window.&nbsp; 
+Here is code for creating a Scanner object named <i>console</i> and obtaining a string 
+(a name) from the user:<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Scanner console = new Scanner(System.in);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String name;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.print(&quot;Enter name: &quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name = console.nextLine();<br>
+</span><span style="font-family:&quot;Times New Roman&quot;">The nextLine() 
+method will return whatever the user types up to the point of pressing the Enter 
+key as a String.&nbsp; (Note: you will need to import the Scanner class for this 
+code to work.)</span></p>
+<p class="Question"><span style="font-family: Times New Roman">Modify the code 
+in the main method by removing all of the current statements and then adding 
+these statements to read the user's name.&nbsp; Add a statement that displays 
+the name obtained from the user.</span></p>
+<p class="Question"><span style="font-family: Times New Roman">
+<span class="style4">Print a copy 
+of the code</span> you used to accomplish this and turn it in with your lab.</span></p>
+<p class="Question">3. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">Write code to 
+experiment with comparing two strings for equality.&nbsp;
+(Hint: It may be worth re-reading page 228 at this time.)<br><br>
+First, create the string <i>message1</i> as follows:<br>
+<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String message1 
+= “I love Java!“; <br>
+<br>
+</span><span style="font-family:&quot;Times New Roman&quot;">Create a second 
+string named <i>message2</i> but use a Scanner to obtain the string “I love 
+Java!” from the console and store it 
+in <i>message2</i>.&nbsp; </span><span style="font-family:&quot;Courier New&quot;"><br>
+<br>
+</span><span style="font-family:&quot;Times New Roman&quot;">Use an if statement 
+with the == 
+comparison operator to see if <i>message1</i> and <i>message2</i> are the same.&nbsp;
+<span class="style4">Describe the results</span> you get.&nbsp; 
+<span class="style4">Draw a state-of-memory diagram</span> to 
+illustrate the two String variables.&nbsp; (If you aren't sure what a 
+state-of-memory diagram looks like, check out<span class="style8"> page 117 of 
+your textbook</span>.)&nbsp; <span class="style4">How does the state-of-memory diagram help 
+with an explanation of the results of the comparison?</span><br>
+<br>
+Now compare the two strings using the String <i>equals</i> method.&nbsp; 
+<span class="style4">Describe 
+the results</span> you get.<br>
+<br>
+Change the way the two strings are created to be:<br>
+<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String message3 
+= “I love Java!“; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String message4 = message3;<br>
+</span><span style="font-family:&quot;Times New Roman&quot;"><br>
+Again use the == comparison operator to see if <i>message3</i> and <i>message4</i> are the same.&nbsp; 
+<span class="style4">Describe 
+the results</span> you get.&nbsp; <span class="style4">Draw a state-of-memory diagram</span> to illustrate 
+the two variables.&nbsp; <span class="style4">How does the state-of-memory diagram help with an 
+explanation of the results of the comparison?</span><br>
+<br>
+Once again compare the two strings using the <i>equals</i> method and 
+<span class="style4">describe the results </span>you get.<br>
+&nbsp;<br>
+<span class="style4">Print a copy of the program</span> you used to perform these tests and turn it 
+in with your lab. <br>
+<br>
+<strong>Extra Credit</strong>: Investigate what happens when the two strings are created as 
+follows:<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String message5 
+= “I love Java!“; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String message6 = “I love Java!“;<br>
+</span><span style="font-family:&quot;Times New Roman&quot;">-&nbsp; 
+<span class="style5">Are the two 
+strings the same according to the == operator?</span><br>
+-&nbsp; <span class="style5">Are the two strings the same according to the equals method?</span><br>
+Based on your results <span class="style5">draw the state-of-memory diagram of the two strings</span>.<br>
+&nbsp;</span></p>
+<p class="Question">4. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">Write code in your 
+main class to request a sentence from the user (at the console) and count the 
+number of spaces in the sentence.&nbsp; You can do this by using the String method <i>
+charAt(i)</i> which returns the character (of type <i>char</i>) at position <i>i</i> 
+of the string.&nbsp; Write a loop (a <i>for</i> loop) that examines each character in the sentence and 
+determines whether or not it is a blank space.&nbsp; Your code should display both 
+the sentence entered and the number of spaces found.<br>
+<br>
+(Note: One could examine each character using the String method <i>substring</i>.&nbsp; 
+However, the <i>substring</i> method returns a String whereas the <i>charAt</i> 
+method returns a character.)<br>
+<br>
+Run the program and <span class="style4">print a copy of the output</span> and turn it in with your 
+lab.&nbsp; <span class="style4">Print a copy of the program</span> and turn it in with your lab as well.<br>
+&nbsp;</span></p>
+<p class="Question">5. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">Write code in your 
+main class to request a sentence from the user and find the frequency with which 
+each vowel occurs.&nbsp; For example, in the previous sentence the frequencies are:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a – 5<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e – 14<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i – 6<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; o – 6<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; u – 5<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y – 2<br>
+When you count the vowels ignore the case.&nbsp; For example, ‘A’ counts as an ‘a’, 
+‘E’ counts as an ‘e’, etc.<br>
+<br>
+Display both the sentence entered and the frequency of each vowel.&nbsp; <br>
+<br>
+Run the program and<span class="style4"> print a copy of the output</span> and turn it in with your 
+lab.&nbsp; <span class="style4">Print a copy of the program</span> and turn it in with your lab as well.</span></p>
+<p class="Question">&nbsp;</p>
+<p class="Question">6. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">In Steps 4 and 5 we 
+examined each letter in a (long) string.&nbsp; Now we want to examine each word in a 
+string.&nbsp; Here a “word” will be a string of non-blank characters that are 
+separated by blanks.&nbsp; Rather than using the <i>substring</i> method to take the 
+string apart (see the extra credit below) we will use the Scanner class.<br>
+<br>
+A Scanner object can be built from a String.&nbsp; When asked the Scanner object will 
+provide each word in the string until the string is exhausted.&nbsp; For example, the 
+following code segment creates a Scanner object named <i>sc</i> from the string
+<i>lyrics</i> and then displays each word (<i>nextWord</i>) from the string on a 
+separate line:<br>
+<br>
+</span><span style="font-family:&quot;Courier New&quot;">&nbsp;&nbsp; String nextWord;<br>
+&nbsp;&nbsp; String lyrics = “One fish, two fish, red fish, blue fish.“;<br>
+&nbsp;&nbsp; Scanner sc = new Scanner(lyrics);<br>
+&nbsp;&nbsp; while (sc.hasNext())<br>
+&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; nextWord = sc.next ();<br>
+&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(nextWord);<br>
+&nbsp;&nbsp; }<br>
+</span><span style="font-family:&quot;Times New Roman&quot;"><br>
+Enter this code in your program and test it on a sentence you get from the user 
+(via the console) instead of <i>lyrics</i>.<br>
+<br>
+Modify the code to remove the display of the words and to calculate and display 
+the number of words in the sentence.&nbsp; Then further modify the code to calculate 
+and display the average word length.&nbsp; <br>
+<br>
+Run the program and <span class="style4">print a copy of the output</span> and turn it in with your 
+lab.&nbsp; <span class="style4">Print a copy of the program</span> and turn it in with your lab as well.<br>
+&nbsp;</span></p>
+<p class="Question">7. <span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;
+</span><span style="font-family:&quot;Times New Roman&quot;">(Extra Credit)&nbsp; 
+Write the code to take a string (a sentence or phrase) and create two strings 
+from it.&nbsp; The first string is to store the first word and the second is to store 
+the remainder of the initial string.&nbsp; So, for example, if the initial string is 
+“One fish, two fish, red fish, blue fish.”, the first string should store “One” 
+and the second string should store “fish, two fish, red fish, blue fish.”&nbsp; 
+Assume that words are separated by one or more spaces.&nbsp; &nbsp;(Hint: Use the <i>
+indexOf</i> and <i>substring</i> methods of the String class.)<br>
+<br>
+As part of the extra credit test your program and answer the following questions 
+based on your tests:<br>
+-&nbsp; <span class="style5">Does your program work correctly if there are blank spaces before the first 
+word in the initial string?</span>&nbsp; <br>
+-&nbsp; <span class="style5">Does it work correctly if the words are separated by more than one blank 
+space?</span>&nbsp; <br>
+-&nbsp; <span class="style5">Can you fix it so that it works correctly in these conditions?</span>&nbsp; <br>
+<br>
+Run the program and <span class="style5">print a copy of the output</span> and turn it in with your 
+lab.&nbsp; <span class="style5">Print a copy of the program</span> and turn it in with your lab as well.<br>
+<br>
+&nbsp;</span></p>
+<p class="Question" style="margin-left:0in;text-indent:0in"><b>
+<span style="font-family:&quot;Times New Roman&quot;">Hand in:</span></b></p>
+<p class="Question" style="text-indent:0in">
+<span style="font-family: Times New Roman">The write-up you hand in for this lab 
+should include:<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; results requested in Steps 1 and 3.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; state-of-memory diagrams requested in Step 3.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; printed copies of the output from Steps 4, 5, and 6. <br>
+-&nbsp;&nbsp;&nbsp;&nbsp; printed copies of the source code requested in Steps 1 
+– 6.<br>
+-&nbsp;&nbsp;&nbsp;&nbsp; any requested materials pertaining to extra credit in either Step 3 or Step 7. 
+<br>
+</span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt"><br>
+</span><b><span style="font-size: 11.0pt">Help Policy:</span></b></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">Help Policy in Effect for 
+This Assignment:&nbsp; <u>Group Project with Limited Collaboration</u></span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">In particular, you may 
+discuss the assignment and concepts related to the assignment with the following 
+persons, in addition to an instructor in this course: <u>any member of your 
+group; any St. Bonaventure Computer Science instructor; and any student enrolled 
+in CS 131</u>.&nbsp; </span></p>
+<p class="MsoNormal"><span style="font-size: 11.0pt">You may use the following 
+materials produced by other students:&nbsp; <u>materials produced by members of your 
+group</u>.</span></p>
+
+</body>
+
+</html>

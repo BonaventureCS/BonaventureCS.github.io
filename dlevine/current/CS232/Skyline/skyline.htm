@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document"><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Skyline Assignment - CS 232 - Spring 2014</title>
+</head>
+<body>
+<h2 align="center">
+CS 232<br>
+Algorithms and Data Structures<br>
+Skyline Assignment</h2>
+<br>
+<h3>Background</h3>
+
+<p>&nbsp;&nbsp;&nbsp; This programming project will require you to implement (in Java) a pair of algorithms to determine the 
+two-dimensional skyline of a set of buildings.&nbsp; The assignment comes in five phases.&nbsp; The first two phases are due 
+Friday, February 7, at 4 p.m..&nbsp; All other phases are due Wednesday, March 12 at 
+4 p.m. and must be completed on your own, 
+as an Individual Project with No Collaboration, as outlined in the department's Academic Practices and Policies document.&nbsp; 
+As you are maturing programmers, your assignment will be graded on correctness and documentation, but also structure and style.&nbsp; 
+You are encouraged to discuss programming details with the instructor.</p><p>&nbsp;&nbsp;&nbsp; For each phase, it will be 
+expected that the program has incorporated all relevant portions of the previous phases.&nbsp; Any errors found in one phase 
+and not subsequently corrected, will result in a deduction in subsequent phases as well.&nbsp; If two or more phases are 
+submitted simultaneously, then it is possible that a single error could result in multiple deductions.&nbsp; The instructor 
+promises to return each phase to the student within three class days (spring break not included) of its receipt.&nbsp; Should he fail 
+to do so, an extension will be granted to any student so affected.&nbsp; If the phases are submitted too late, however, it 
+is possible that feedback will not be available in a timely fashion.&nbsp; It is the student's responsibility to plan around this.</p>
+
+<p><b><font size="4">The Problem</font></b><br>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp; We imagine a city situated on a plain, with all of its buildings aligned to the coordinate axes and 
+all of the building are rectangular prisms.&nbsp; The input to the problem is a list of buildings, each specified by its 
+left x-coordinate, its top y-coordinate, and its right y-coordinate in that order.&nbsp; The output is an List of Points, 
+describing the outline of the skyline.&nbsp; Two examples are shown below:</p>
+
+<p align="center"><img border="0" src="skylin1.jpg" width="308" height="234"></p>
+
+<p>In this case, the buildings are (20,40,90), (100,150,120), (150,5,190), and the skyline is (20,40), (90,0), (100,150), 
+(120,0), (150,5), (190,0).</p>
+
+<p align="center"><img border="0" src="skylin2.jpg" width="308" height="234"></p>
+
+<p align="left">In this case, the buildings are (40,60,90), (70,150,130), and the skyline is (40,60), (70,150), (130,0).&nbsp; 
+Note that the picture does not show the overlap of the buildings in any particular manner.<br><br>
+
+The skyline proceeds from one point of the skyline to the next by moving horizontally (at the current y-value) until the 
+x-value of the next Point is reached.&nbsp; It then proceeds vertically until the y-value of that Point is reached.&nbsp; 
+It continues to do so until all of the Points have been accounted for.&nbsp; The x-values in a skyline are strictly increasing.</p>
+
+<p>Note that consecutive Points in the skyline should NOT have equal x- or y-values.&nbsp; Such points indicate the presence 
+of an extraneous Point that is not needed.&nbsp; All skylines are assumed to start at (0,0); this point is not included in 
+the skyline.&nbsp; The y-value of the last Point of all skylines should be 0 as well.</p>
+
+<h3>Helper classes</h3>
+
+<p>&nbsp;&nbsp; <span style="font-weight: 400">Two classes, Building and SkylineViewer, are provided for you.&nbsp; The 
+Building class is a simple encapsulation (similar to the Point class, but with no public data) that holds the input values.&nbsp; 
+The SkylineViewer class will permit you to examine your input and output in a graphical context.&nbsp; These will are provided 
+in the file <a href="SkylineHelper.jar">SkyLineHelper.jar</a>.&nbsp; 
+<a href="doc/index.html">Documentation</a> for these classes is also provided.</span></p>
+
+<h3>Phase I (due Friday, February 7, at 4 p.m.)</h3>
+It is always better to determine your test data before you begin writing 
+code.&nbsp; Doing so prevents you from designing your test data to cover only those cases you dealt with in the code.&nbsp; 
+Therefore, the first phase of the assignment requires that you create a test suite against which you will run your code.&nbsp; 
+Your test suite should be presented as a JUnit test suite.&nbsp; Each test method in your suite should be public, void, 
+parameterless, and start with the letters &quot;test&quot; followed by your initials 
+and then the string &quot;2014&quot;.&nbsp; You should assume that you are 
+testing a Skyline class which has a method with the following signature: <br><br>
+
+     &nbsp;&nbsp;&nbsp;&nbsp; <font face="Courier New">public static List&lt;Point&gt; makeSkyline(List&lt;Building&gt;)</font><br><br>
+     
+To help you with the testing, a buggy Skyline class is provided in the file 
+<a href="Buggy.jar">Buggy.jar</a>.&nbsp; 
+The makeSkyline method in this class works unless the input List has size 3.&nbsp; A probably working version of the 
+class is found in <a href="Hopeful.jar">Hopeful.jar</a>.<p>The Corona project, 
+designed by Steve Andrianoff, Coty Collins, Dan Eisemann, and David Levine, should aid you 
+considerably in your completion of this phase.&nbsp; A brief &quot;lab write-up&quot; that 
+mostly matches the demo in class is available to help you with the
+<a href="CS232Lab00.htm">logistics of creating your JUnit tests</a>.&nbsp; </p>
+<h3>Phase II (due Friday, February 7, at 4 p.m.)</h3>
+
+The assignment for Phase II is to demonstrate that you can use both of these classes effectively.&nbsp; You are therefore to 
+write a program that builds a List of Buildings and a List of Points and displays them using a SkylineViewer 
+object.&nbsp; The List of Points can be &quot;hard-coded&quot;; in this phase you are not required to compute the skyline.&nbsp; 
+(Note: The classes are part of a package named CS232.&nbsp; Be sure to treat them properly in your project.)&nbsp; 
+
+<h3>Phase III (due Wednesday, March 12 at 4 p.m.)</h3>
+<p>You are to create a class named Skyline with that includes (at least) the makeSkyline 
+method described above.<span style="font-weight: 400">&nbsp; For this phase only, you 
+may assume that the buildings are disjoint - in fact that there is an alley between all buildings.</p>
+
+<h3>Phase IV (due Wednesday, March 12 at 4 p.m.)</h3>
+In this phase, the format of the input and output is the same as in Phase III, but it is possible that some buildings 
+overlap.&nbsp; The skyline is to be computed by an insertion-sort-like algorithm where each building is added to the 
+skyline of the buildings that preceded it.&nbsp; This will result in a running time that is quadratic in the length of the input.
+
+<h3>Phase V (due Wednesday, March 12at 4 p.m.)</h3>
+The input and output for this phase is identical to that of Phase IV, but this time, you must use a divide-and-conquer, 
+merge-sort-like algorithm.&nbsp; This will result in an O(N*logN) algorithm.&nbsp; If Phase IV has been coded correctly, 
+the code to merge one building into an existing skyline can easily be modified to merge two existing skylines into one.&nbsp; 
+This should make Phase V considerably easier than Phase IV.
+
+</body>
+</html>
